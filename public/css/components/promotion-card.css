@@ -1,0 +1,35 @@
+.promotion-card {
+    border-radius: 10px;
+    border: 2px solid #7E1412;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+
+}
+.promotion-card > .promotion {
+    background-color: #7E1412;
+    color:white;
+    width: 100%;
+    padding: 0.5rem;
+}
+.information-container {
+    margin: auto;
+    width: 80%;
+}
+.information-container > .old-price {
+    text-transform: uppercase;
+    text-transform: full-width;
+
+}
+.old-price > span{
+    text-decoration: line-through;
+}
+.companies-container > div{
+    margin-top: 4%;
+}
+.companies-container img {
+
+}
+
+

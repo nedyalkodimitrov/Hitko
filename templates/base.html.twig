@@ -1,12 +1,200 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="{{asset("css/components/footer.css")}}" rel="stylesheet">
+    <link href="{{asset("css/components/navbar.css")}}" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="{{ asset("js/homePageAnimation.js") }}" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/58cf8ffc69.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ asset("css/typography.css") }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    {% block stylesheets %}{% endblock %}
+</head>
+<body>
+{#    <nav class="navbar navbar-expand-lg navbar-light  homePage-start-nav">#}
+{#        <img src="{{ asset("images/logo.png") }}" alt="">#}
+{#        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >#}
+{#            <span class="navbar-toggler-icon"></span>#}
+{#        </button>#}
+{#        <div class="collapse  navbar-collapse  justify-content-end mr-3" id="navbarNavDropdown">#}
+{#            <ul class="navbar-nav">#}
+{#                <li class="nav-item active">#}
+{#                    <a class="nav-link" href="#">Начало <span class="sr-only">(current)</span></a>#}
+{#                </li>#}
+{#                <li class="nav-item">#}
+{#                    <a class="nav-link" href="#">Контакти</a>#}
+{#                </li>#}
+{#                <li class="nav-item">#}
+{#                    <a class="nav-link" href="#">За нас</a>#}
+{#                </li>#}
+{#                <li class="nav-item dropdown">#}
+{#                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">#}
+{#                        Услуги#}
+{#                    </a>#}
+{#                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">#}
+{#                        <li><a class="dropdown-item" href="#">Унищожавне на пълзещи вредители#}
+{#                        <ul class="dropdown-menu">#}
+{#                            <li class="dropdown-item"><a href="">asdsad</a></li>#}
+{#                        </ul>#}
+
+{#                        </a>#}
+{#                </li>#}
+{#                        <a class="dropdown-item" href="#">Унищожавне на летящи вредители</a>#}
+{#                        <a class="dropdown-item" href="#">Проонва</a>#}
+{#                    </div>#}
+{#                </li>#}
+{#                <li class="nav-item dropdown">#}
+{#                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">#}
+{#                        Цени#}
+{#                    </a>#}
+{#                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">#}
+{#                        <a class="dropdown-item" href="#">Action</a>#}
+{#                        <a class="dropdown-item" href="#">Another action</a>#}
+{#                        <a class="dropdown-item" href="#">Something else here</a>#}
+{#                    </div>#}
+{#                </li>#}
+{#                <li class="nav-item">#}
+{#                    <a class="nav-link" href="#">Галерия</a>#}
+{#                </li>#}
+{#            </ul>#}
+{#        </div>#}
+{#    </nav>#}
+<div>
+    <div class="col-lg-12  col-12 m-0 justify-content-around row header-information" >
+        <a class="col-4 col-md-3 col-lg-3 justify-content-center row my-auto m-0 p-0" href="">
+            <i class="fas fa-phone-alt col-2 p-0"></i>
+            <h5 class="col-10 p-0 ml-0">0897 55 57 51</h5>
+        </a>
+        <a class="col-4 col-lg-4 col-md-4 row justify-content-center p-0 my-auto m-0" href="">
+            <i class="fa fa-clock-o col-2 p-0 my-auto" aria-hidden="true"></i>
+            <div class="col-10 my-auto p-0 m-0">
+                <h5 class="p-0 m-0 ml-1">Работно време</h5>
+                <h6 class="p-0 m-0 ml-1">от 08:00 - 22:00</h6>
+            </div>
+        </a>
+        <a class="col-4 row d-none d-md-flex justify-content-center d-lg-flex p-0 my-auto m-0" href="">
+            <i class="fa fa-comments col-2  p-0 my-auto" aria-hidden="true"></i>
+            <div class="col-10 my-auto m-0 p-0">
+                <h5 class="p-0 m-0 ml-1 ">Приемане на заявки</h5>
+                <h6 class="p-0 m-0 ml-1">всеки ден от 8:00- 16:00</h6>
+            </div>
+
+        </a>
+    </div>
+
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm homePage-start-nav" id="navbar">
+    <div class="container mx-auto col-12  p-0 row">
+        <button class="navbar-toggler" id="navbar-toggler-button" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
+            <div class="nav-toggle-button-container" onclick="changeToggleMenuButton(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </button>
+        <div id="navbarNavDropdown" class="collapse navbar-collapse col-11 mx-auto">
+            <a href=""><h4>Хитко</h4></a>
+            <ul class="nav navbar-nav menu"  id="menu">
+                <li><a href="">Начало</a></li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" href="#">Курсове за шофьори</a>
+                    <ul class="dropdown-menu" role="menu" id="firs-dropdown">
+                        <li class="">
+                            <a data-toggle="dropdown" href="#">Категоря А1</a>
+                        </li>
+                        <li class="">
+                            <a data-toggle="dropdown" href="#">Категория А2</a>
+                        </li>
+                        <li class="">
+                            <a data-toggle="dropdown" href="#">Категория А</a>
+                        </li>
+                        <li class="">
+                            <a data-toggle="dropdown" href="#">Категория B1</a>
+                        </li>
+                        <li><a href="#">Категория B</a></li>
+                        <li><a href="#">Категория C</a></li>
+                        <li><a href="#">Категория C + E</a></li>
+                        <li><a href="#">Категория B + E</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" href="#">Курсове за правоспособност</a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Mотокар</a></li>
+                        <li><a href="#">Багер</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Контакти</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container row col-12 m-0 p-0">
+    <div class="col-12 m-0 p-0">
+        {% block navBarContent %}
+        {% endblock %}
+    </div>
+</div>
+{% block body %}{% endblock %}
+{% block javascripts %}{% endblock %}
+
+<footer class="footer-distributed row justify-content-around col-12  pt-4 m-0 p-0 container">
+    <div class="footer-left col-lg-5">
+        <img class="logo-footer" src="{{ asset("images/logo.png") }}" alt="">
+        <p class="footer-links">
+            <a href="#" class="link-1">Начало</a>
+            <a href="#">Контакти</a>
+            <a href="#">За нас</a>
+            <a href="#">Галерия</a>
+        </p>
+
+    </div>
+    <div class="footer-center  col-lg-5 col-12 container row">
+
+        <div class="col-10 mx-auto p-0 justify-content-center m-0 row  ">
+            <i class="fa fa-phone  col-2 m-2  p-2 "></i>
+            <p class="col-8 text-left my-auto ml-1 pl-0 mt-2 pt-2   ">0897 55 57 51</p>
+        </div>
+        <div class="col-10 mx-auto p-0  justify-content-center m-0 row">
+            <i class="fa fa-envelope col-2 m-2 p-2 "></i>
+            <p class="col-8 text-left my-auto ml-1 pl-0 mt-2 pt-2 "><a href="mailto:support@company.com">unishtojiteli@gmail.com</a></p>
+        </div>
+        <div class="col-10 mx-auto ">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+        </div>
+    </div>
+    <p class="footer-company-name col-12 mt-4 mb-4 text-center">Унищожители © 2020</p>
+</footer>
+
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+
+        console.log(22);
+    }
+
+    function changeToggleMenuButton(x) {
+        x.classList.toggle("change");
+    }
+</script>
+</body>
 </html>

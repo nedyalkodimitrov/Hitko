@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    font:inherit;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5  'Comfortaa', cursive; ;
+    font-weight: 400;
+}
+body, form, input, select, option, p, a, span, table,thead, tbody,th, table th  {
+    font: inherit;
+
+}
+
+h1 {
+    font-size: 3.5em;
+    font-weight: 500;
+}
+h2{font-size: 3em}
+h3{font-size: 2.5em}
+h4{font-size: 2.0em}
+h5{font-size: 1.5em}
+h6{font-size: 1.1em}
+
+blockquote  {
+    padding: 1em;
+    font-style: italic;
+    opacity: 0.8;
+    font-family: sans-serif;
+
+}
+
+blockquote p:last-child{
+    padding: 0;
+    padding-left: 35rem;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    html {
+        font: 15px/1.5  'Comfortaa', cursive;;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    html {
+        font: 16px/1.5  'Comfortaa', cursive;;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    html {
+        font: 18px/1.5  'Comfortaa', cursive;;
+    }
+}
+
+@media only screen and (min-width: 1620px) {
+    html {
+        font: 23px/1.5  'Comfortaa', cursive;;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    html {
+        font: 28px/1.5 'Comfortaa', cursive;;
+    }
+}
+@media only screen and (min-width: 2220px) {
+    html {
+        font: 32px/1.5 'Comfortaa', cursive;;
+    }
+}
+
+
+.visible, .invisible {
+    opacity: 0.0;
+    transition: opacity 0.5s ease;
+}
+.visible {
+    opacity: 1.0;
+}

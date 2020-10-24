@@ -1,13 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="268f11a9-8e14-461e-bde4-f7fe812e050a" name="Default Changelist" comment="" />
+    <list default="true" id="268f11a9-8e14-461e-bde4-f7fe812e050a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/css/aboutUsPageStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/allInsectsPageStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/components/footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/components/navbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/components/promotion-card.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/components/slideshow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/homePageStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/insectInformationPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/typography.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/Hedar-Unishtojiteli 2020.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/aboutUs/call-us.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/aboutUs/unishotjiteli-za-nas-preparati.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/aboutUs/unishotjiteli-za-nas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/car.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/companies/amperel-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/companies/bylgarska-kamara.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/companies/carsko-selo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/companies/glav.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/companies/hotel-infiniti.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/companies/koloezdene.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/companies/lili.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/companies/lireks.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/companies/mebeli-labirint.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/companies/mistyr-burgeri.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/companies/nap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/companies/obshtina-blagoevgrad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/companies/obshtina-chavdar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/companies/obshtina-dewnq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/companies/obshtina-syedinenie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/companies/obshtina-velingrad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/companies/opiocvet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/companies/park-mol-stara-zagora.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/companies/serdika-center.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/companies/vitosha.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/disectanct/disectanct-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/drugi-vrediteli.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/etajna-sobstwenost.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/header-otdelni-chasti.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/homePageBackground.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/houses/100m2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/houses/ot-30-do-50m2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/houses/ot-51-do-70m2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/houses/ot-71-do-100m2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/insectBackground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/insects/bylhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/insects/dyrvenici.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/insects/etajna-sobstvenost.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/insects/grizachi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/insects/hlabarki.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/insects/komari.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/insects/kyrleji.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/insects/mravki.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/insects/mugi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/insects/skolopendra.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/insects/styrsheli.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/insects/vlechugi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/ScrollTrigger.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/homePageAnimation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/slideshow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/tabs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/home/home.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -125,10 +192,25 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Develpment\Symfony\Hitko\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Develpment\Symfony\Hitko\templates\home" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -138,7 +220,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602154512984</updated>
-      <workItem from="1602154514362" duration="296000" />
+      <workItem from="1602154514362" duration="2464000" />
+      <workItem from="1602315796463" duration="3338000" />
+      <workItem from="1602396962938" duration="594000" />
+      <workItem from="1603530033835" duration="669000" />
     </task>
     <servers />
   </component>

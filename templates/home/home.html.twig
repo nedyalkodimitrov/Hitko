@@ -1,0 +1,182 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MainController!{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset("css/homePageStyle.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/components/slideshow.css") }}">
+    <script src="{{ asset("js/slideshow.js") }}"></script>
+    <script src="{{ asset("js/tabs.js") }}"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+{% endblock %}
+{% block navBarContent %}
+{% endblock %}
+{% block body %}
+
+    <div class="slider-container pt-5 mt-0 container-color" >
+        <div class="slider  ">
+            <div class="slider--el slider--el-1 anim-4parts active">
+                <div class="slider--el-bg">
+                    <div class="part top left"></div>
+                    <div class="part top right"></div>
+                    <div class="part bot left"></div>
+                    <div class="part bot right"></div>
+                </div>
+                <div class="slider--el-content">
+
+                </div>
+            </div>
+            <div class="slider--el slider--el-2 anim-9parts">
+                <div class="slider--el-bg">
+                    <div class="part left-top"></div>
+                    <div class="part mid-top"></div>
+                    <div class="part right-top"></div>
+                    <div class="part left-mid"></div>
+                    <div class="part mid-mid"></div>
+                    <div class="part right-mid"></div>
+                    <div class="part left-bot"></div>
+                    <div class="part mid-bot"></div>
+                    <div class="part right-bot"></div>
+                </div>
+                <div class="slider--el-content">
+
+                </div>
+            </div>
+            <div class="slider--el slider--el-3 anim-5parts">
+                <div class="slider--el-bg">
+                    <div class="part part-1"></div>
+                    <div class="part part-2"></div>
+                    <div class="part part-3"></div>
+                    <div class="part part-4"></div>
+                    <div class="part part-5"></div>
+                </div>
+                <div class="slider--el-content">
+
+                </div>
+            </div>
+            <div class="slider--el slider--el-4 anim-3parts">
+                <div class="slider--el-bg">
+                    <div class="part left"></div>
+                    <div class="part mid"></div>
+                    <div class="part right"></div>
+                </div>
+                <div class="slider--el-content">
+
+                </div>
+            </div>
+            <span class="slider--control left"><i class="fas fa-chevron-left"></i></span>
+            <span class="slider--control right"><i class="fas fa-chevron-right"></i></span>
+        </div>
+    </div>
+
+    <div class="container col-12 row aboutUs-container m-0 " >
+        <div class="col-12 row mx-auto">
+            <div class="aboutUs-text col-12 text-center mb-4"><h2>Защо да изберерете нас</h2></div>
+            <div class="col-8 col-md-3 mt-3 mt-md-0 mt-lg-0 col-lg-3 mx-auto aboutUs-element">
+                <div class="aboutUs-element-numbers"><h3 class="text-center">24590</h3></div>
+                <div class="aboutUs-element-text"><h5 class="text-center">Защитени домакинства, които ни се довериха</h5></div>
+            </div>
+            <div class="col-8 col-md-3 mt-3 mt-md-0 mt-lg-0 col-lg-3 mx-auto aboutUs-element">
+                <div class="aboutUs-element-numbers"><h3 class="text-center">100%</h3></div>
+                <div class="aboutUs-element-text"><h5 class="text-center">Качество и професионализъм</h5></div>
+            </div>
+            <div class="col-8 col-md-3 mt-3 mt-md-0 mt-lg-0 col-lg-3 mx-auto aboutUs-element">
+                <div class="aboutUs-element-numbers"><h3 class="text-center">847</h3></div>
+                <div class="aboutUs-element-text"><h5 class="text-center">Професионално защитени бизнес обекта</h5></div>
+            </div>
+            <div class="col-8 col-md-3 col-lg-3 mt-3 mt-md-0 mt-lg-0 mx-auto aboutUs-element">
+                <div class="aboutUs-numbers"><h3 class="text-center">12</h3></div>
+                <div class="aboutUs-element-text"><h5 class="text-center">Години доказваме, че сме най-добрите в ддд бранша</h5></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container col-12 container-color mb-0">
+        <div class="col-12 pt-5">
+            <h3 class=" col-12 text-center pt-5">Промоции</h3>
+            <h5 class="col-12 text-center pb-3 m-0">Не използвай чехъла, използвай нас</h5>
+            <hr class="col-9 mx-auto mb-0 pb-5">
+        </div>
+    </div>
+
+        <div class="col-12 col-lg-11 mx-auto p-0 m-0 ">
+            <div class="col-10 mx-auto">
+                <hr>
+            </div>
+            <div class="col-12 mt-5 text-center"><h3>Нашите клиенти</h3></div>
+            <div class="col-12 col-lg-7 col-md-8  mb-3 mx-auto mt-3 mb-3 text-center"><p>имаме удоволствието да работим за стотици клиенти в София и страната, както и за редица популярни брандове</p></div>
+            <div class="companies-container mx-auto mt-3 m-0 p-0 justify-content-center col-11 row">
+                <div class="col-6 col-md-3 col-lg-3 p-0 mt-4"><div class="col-11 col-md-10 col-lg-10 p-0 mx-auto"><img  src="{{ asset("images/companies/amperel-logo.png") }}" alt=""></div></div>
+                <div class="col-6 col-md-3 col-lg-3 p-0  mt-4"><div class="col-11 col-md-10 col-lg-10 p-0 mx-auto"><img src="{{ asset("images/companies/bylgarska-kamara.png") }}" alt=""></div></div>
+                <div class="col-6  col-md-3 col-lg-3 p-0 mt-4"><div class="col-11 col-md-10 col-lg-10 p-0 mx-auto"><img src="{{ asset("images/companies/koloezdene.png") }}" alt=""></div></div>
+                <div class="col-6  col-md-3 col-lg-3 p-0 mt-4"><div class="col-11 col-md-10 col-lg-10 p-0 mx-auto"><img src="{{ asset("images/companies/vitosha.png") }}" alt=""></div></div>
+                <div class="col-6  col-md-3 col-lg-3 p-0 mt-4"><div class="col-11 col-md-10 col-lg-10 p-0 mx-auto"><img src="{{ asset("images/companies/glav.png") }}" alt=""></div></div>
+                <div class="col-6 col-md-3 col-lg-3  p-0 mt-4"><div class="col-11 col-md-10 col-lg-10 p-0 mx-auto"><img src="{{ asset("images/companies/lili.png") }}" alt=""></div></div>
+                <div class="col-6 col-md-3 col-lg-3  p-0 mt-4"><div class="col-11 col-md-10 col-lg-10 p-0 mx-auto"><img src="{{ asset("images/companies/lireks.png") }}" alt=""></div></div>
+                <div class="col-6 col-md-3 col-lg-3  p-0 mt-4"><div class="col-11 col-md-10 col-lg-10 p-0 mx-auto"><img src="{{ asset("images/companies/mebeli-labirint.png") }}" alt=""></div></div>
+                <div class="col-6  col-md-3 col-lg-3 p-0 mt-4"><div class="col-11 col-md-10 col-lg-10 p-0 mx-auto"><img src="{{ asset("images/companies/mistyr-burgeri.png") }}" alt=""></div></div>
+                <div class="col-6 col-md-3 col-lg-3 p-0 mt-4"><div class="col-11 col-md-10 col-lg-10 p-0 mx-auto"><img src="{{ asset("images/companies/nap.png") }}" alt=""></div></div>
+                <div class="col-6 col-md-3 col-lg-3  p-0 mt-4"><div class="col-11 col-md-10 col-lg-10 p-0  mx-auto"><img src="{{ asset("images/companies/obshtina-blagoevgrad.png") }}" alt=""></div></div>
+                <div class="col-6 col-md-3 col-lg-3  p-0 mt-4"><div class="col-11 col-md-10 col-lg-10 p-0 mx-auto"><img src="{{ asset("images/companies/obshtina-velingrad.png") }}" alt=""></div></div>
+                <div class="col-6 col-md-3 col-lg-3  p-0 mt-4"><div class="col-11 col-md-10 col-lg-10 p-0 mx-auto"><img src="{{ asset("images/companies/obshtina-dewnq.png") }}" alt=""></div></div>
+                <div class="col-6 col-md-3 col-lg-3 p-0 mt-4"><div class="col-11 col-md-10 col-lg-10 p-0 mx-auto"><img src="{{ asset("images/companies/obshtina-syedinenie.png") }}" alt=""></div></div>
+                <div class="col-6 col-md-3 col-lg-3 d-none d-md-flex d-lg-flex p-0 mt-4"><div class="col-10  p-0 mx-auto"><img src="{{ asset("images/companies/obshtina-chavdar.png") }}" alt=""></div></div>
+                <div class="col-6 col-md-3 col-lg-3 d-none d-md-flex d-lg-flex p-0 mt-4"><div class="col-10  p-0 mx-auto"><img src="{{ asset("images/companies/opiocvet.png") }}" alt=""></div></div>
+                <div class="col-6 col-md-3 col-lg-3 d-none d-md-flex d-lg-flex p-0 mt-4"><div class="col-10  p-0 mx-auto"><img src="{{ asset("images/companies/park-mol-stara-zagora.png") }}" alt=""></div></div>
+                <div class="col-6 col-md-3 col-lg-3 d-none d-md-flex d-lg-flex  p-0 mt-4"><div class="col-10  p-0 mx-auto"><img src="{{ asset("images/companies/serdika-center.png") }}" alt=""></div></div>
+                <div class="col-6 col-md-3 col-lg-3 d-none d-md-flex d-lg-flex p-0 mt-4"><div class="col-10  p-0 mx-auto"><img src="{{ asset("images/companies/hotel-infiniti.png") }}" alt=""></div></div>
+                <div class="col-6 col-md-3 d-none d-md-flex d-lg-flex col-lg-3  p-0 mt-4"><div class="col-10  p-0 mx-auto"><img src="{{ asset("images/companies/carsko-selo.png") }}" alt=""></div></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 row container p-0 m-0 container-color pt-5">
+        <h3 class="col-12 text-center">За Унищожители</h3>
+        <h5 class="col-12 text-center   mb-5">Кои сме ние и защо сме най-добрите?</h5>
+
+        <div class="col-11 pb-5 mx-auto row">
+            <div class="tab col-12 mx-auto p-0 m-0 row">
+                <button class="tablinks col-6  " onclick="openCity(event, 'company')">За фирмата</button>
+                <button class="tablinks col-6" onclick="openCity(event, 'management')">За мениджмънта</button>
+            </div>
+
+            <div id="company" class="tabcontent ">
+                <h3 class="pt-3 text-center pb-3">Унищожители</h3>
+                <div class="col-11 m-auto p-0">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin risus ut eros facilisis ornare. Donec erat metus, dapibus sit amet pulvinar ut, hendrerit sed enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin vulputate orci ut ante sollicitudin consectetur. Sed id ipsum a magna ullamcorper lacinia. Mauris ullamcorper lobortis porta. Integer ultrices hendrerit feugiat.</p>
+                </div>
+            </div>
+
+            <div id="management" class="tabcontent">
+                <h3 class="pt-3 text-center pb-3">Унищожители означава</h3>
+                <div class="col-11 m-auto p-0">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin risus ut eros facilisis ornare. Donec erat metus, dapibus sit amet pulvinar ut, hendrerit sed enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin vulputate orci ut ante sollicitudin consectetur. Sed id ipsum a magna ullamcorper lacinia. Mauris ullamcorper lobortis porta. Integer ultrices hendrerit feugiat.</p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-6"></div>
+
+    </div>
+    <div class="col-4 ">
+
+    </div>
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+{% endblock %}
