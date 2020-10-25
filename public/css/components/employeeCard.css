@@ -120,6 +120,10 @@ p {
   .card-container {
     padding-top: 68%;
   }
+
+  .property-description {
+    height: 55%;
+  }
 }
 
 /*# sourceMappingURL=employeeCard.css.map */
