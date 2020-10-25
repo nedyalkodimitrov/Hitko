@@ -370,9 +370,9 @@ button, input {
 .slider--control i{
     z-index: 122255;
     position: absolute;
-    color: #6C1009;
+    color: black;
     top: 50%;
     left: 50%;
-    font-size: 2rem;
+    font-size: 1.4rem;
     transform: translate(-50%, -50%);
 }

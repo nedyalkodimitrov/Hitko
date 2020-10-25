@@ -1,4 +1,4 @@
-import ScrollTrigger from './ScrollTrigger.min.js'
+import ScrollTrigger from './ScrollTrigger.min'
 const trigger = new ScrollTrigger({
     trigger: {
         once: true
