@@ -1,6 +1,6 @@
 body {
   background-color: #f2f2f2;
-  font-family: "RobotoDraft", "Roboto", sans-serif;
+  font-family: 'RobotoDraft', 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -20,9 +20,15 @@ p {
 }
 
 .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* End Non-Essential  */
@@ -49,7 +55,6 @@ p {
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   overflow: hidden;
 }
@@ -63,7 +68,6 @@ p {
   position: Absolute;
   top: 0px;
   -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   background-image: url("../../images/personal/pexels-matheus-henrin-5248020.jpg");
   background-size: cover;
@@ -78,7 +82,6 @@ p {
   position: absolute;
   bottom: 0em;
   -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   padding: 0.5em 1em;
   text-align: center;
@@ -93,7 +96,6 @@ p {
   bottom: 1em;
   left: 1em;
   -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
@@ -120,11 +122,9 @@ p {
   .card-container {
     padding-top: 85%;
   }
-
   .property-description {
     height: 55%;
     padding-bottom: 0.2em;
   }
 }
-
 /*# sourceMappingURL=employeeCard.css.map */

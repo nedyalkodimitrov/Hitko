@@ -1,0 +1,24 @@
+.c-aboutUs {
+  background: white;
+  padding: 3rem;
+  color: white;
+  width: 100%;
+  word-break: break-word;
+}
+
+.c-aboutUs__text {
+  color: black;
+}
+
+.c-aboutUs__element {
+  color: black;
+}
+
+.c-aboutUs__line {
+  background-color: #696868;
+  /*border: 4px solid red;*/
+  height: 0.1em;
+  margin: 1em 0em 1.5em 0em;
+  display: block;
+}
+/*# sourceMappingURL=components-aboutUs.css.map */

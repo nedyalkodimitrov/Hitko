@@ -1,20 +1,21 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello MainController!{% endblock %}
+{% block title %}Хитко Рз | Начална страница{% endblock %}
 {% block stylesheets %}
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset("css/homePageStyle.css") }}">
     <link rel="stylesheet" href="{{ asset("css/home/homePageStyle.css") }}">
     <link rel="stylesheet" href="{{ asset("css/components/slideshow.css") }}">
     <link rel="stylesheet" href="{{ asset("css/components/employeeCard.css") }}">
+
     <script src="{{ asset("js/slideshow.js") }}"></script>
     <script src="{{ asset("js/tabs.js") }}"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 {% endblock %}
+
 {% block navBarContent %}
 {% endblock %}
+
 {% block body %}
 
     <div class="slider-container pt-5 mt-0 container-color" >
@@ -75,28 +76,28 @@
         </div>
     </div>
 
-    <div class="container col-12 row aboutUs-container m-0 " >
-        <div class="col-12 row mx-auto">
+    <div class="container row col-12  c-aboutUs m-0 " >
+        <div class="col-12 mx-auto row ">
 
-            <div class="aboutUs-text col-12 text-center "><h2>Защо да изберерете нас</h2></div>
-           <div class="col-12 justify-content-center row ">
-               <hr class="col-2 ">
-           </div>
-            <div class="col-8 col-md-3 mt-3 mt-md-0 mt-lg-0 col-lg-3 mx-auto aboutUs-element">
-                <div class="aboutUs-element-numbers"><h3 class="text-center">100% </h3></div>
-                <div class="aboutUs-element-text"><h5 class="text-center">Вземат книжка пъривия път</h5></div>
+            <div class="c-aboutUs__text col-12 text-center "><h2>Защо да изберерете нас</h2></div>
+            <div class="col-12 justify-content-center row ">
+                <hr class="col-2 c-aboutUs__line ">
             </div>
-            <div class="col-8 col-md-3 mt-3 mt-md-0 mt-lg-0 col-lg-3 mx-auto aboutUs-element">
-                <div class="aboutUs-element-numbers"><h3 class="text-center">100%</h3></div>
-                <div class="aboutUs-element-text"><h5 class="text-center">Качество и професионализъм</h5></div>
+            <div class="col-8 col-md-3 mt-3 mt-md-0 mt-lg-0 col-lg-3 mx-auto c-aboutUs__element">
+                <div class="c-aboutUs__numbers"><h3 class="text-center">100% </h3></div>
+                <div class="c-aboutUs__text"><h5 class="text-center">Вземат книжка пъривия път</h5></div>
             </div>
-            <div class="col-8 col-md-3 mt-3 mt-md-0 mt-lg-0 col-lg-3 mx-auto aboutUs-element">
-                <div class="aboutUs-element-numbers"><h3 class="text-center">24/7</h3></div>
-                <div class="aboutUs-element-text"><h5 class="text-center">На вашите услуги </h5></div>
+            <div class="col-8 col-md-3 mt-3 mt-md-0 mt-lg-0 col-lg-3 mx-auto c-aboutUs__element">
+                <div class="c-aboutUs__numbers"><h3 class="text-center">100%</h3></div>
+                <div class="c-aboutUs__text"><h5 class="text-center">Качество и професионализъм</h5></div>
             </div>
-            <div class="col-8 col-md-3 col-lg-3 mt-3 mt-md-0 mt-lg-0 mx-auto aboutUs-element">
-                <div class="aboutUs-numbers"><h3 class="text-center">1</h3></div>
-                <div class="aboutUs-element-text"><h5 class="text-center">В област Разград</h5></div>
+            <div class="col-8 col-md-3 mt-3 mt-md-0 mt-lg-0 col-lg-3 mx-auto  c-aboutUs__element">
+                <div class="c-aboutUs__numbers"><h3 class="text-center">24/7</h3></div>
+                <div class="c-aboutUs__text"><h5 class="text-center">На вашите услуги </h5></div>
+            </div>
+            <div class="col-8 col-md-3 col-lg-3 mt-3 mt-md-0 mt-lg-0 mx-auto  c-aboutUs__element">
+                <div class="c-aboutUs__numbers"><h3 class="text-center">1</h3></div>
+                <div class="c-aboutUs__text"><h5 class="text-center">В област Разград</h5></div>
             </div>
         </div>
     </div>
@@ -202,7 +203,7 @@
         </div>
     </div>
 
-    <div class="col-12 row container p-0 m-0 what-we-offer-container ">
+    <div class="col-12 row o-container p-0 m-0 what-we-offer-container ">
 
        <div class="content row col-12">
            <h3 class="col-12 text-center">Какво можем да ви предложим?</h3>

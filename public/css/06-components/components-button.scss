@@ -1,0 +1,17 @@
+@import "../01-settings/settings-fonts";
+.c-button{
+  font-size: $font-Montserrat;
+  font-size: 1.1em;
+  border: 2px solid gray;
+  color: black;
+  background: white;
+  padding: 0.5em;
+  transition: background-color 0.3s,  color 0.3s  ease;
+
+  &:hover{
+
+    color: white;
+    background: black;
+  }
+
+}

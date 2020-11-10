@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+.c-button {
+  font-size: "Montserrat", sans-serif;
+  font-size: 1.1em;
+  border: 1px solid darkgray;
+  color: black;
+  background: #fff;
+}
+
+/*# sourceMappingURL=components-button.css.map */

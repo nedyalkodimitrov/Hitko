@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,uEAAI;AACZ,OAAO,CAAC,iEAAI;ADAZ,AAAA,IAAI,CAAC;EACD,IAAI,ECEK,MAAM,EAAE,UAAU;EDD3B,SAAS,ECGK,IAAI;EDFlB,WAAW,ECGG,CAAC,EAAC,GAAG;EDFnB,gBAAgB,EAAE,KAAK;CAE1B",
+    "sources": [
+        "elements-body.scss",
+        "../01-settings/settings-fonts.scss"
+    ],
+    "names": [],
+    "file": "elements-body.css"
+}

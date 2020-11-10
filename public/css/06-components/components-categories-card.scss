@@ -1,0 +1,37 @@
+@import "../02-tools/tools-breakpoints";
+
+.c-categories-card{
+  padding-top: 0.5em;
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 1fr 1fr;
+  @include for-phone-only{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+            "image"
+            "text"
+  ;
+  }
+
+ &__image{
+
+  width: 100%;
+   img{
+     width: 100%;
+   }
+
+   @include for-phone-only{
+     grid-area: image;
+   }
+  }
+
+  &__text{
+    padding: 1.3rem;
+    max-width: 64em;
+    @include for-phone-only{
+      grid-area: text;
+    }
+  }
+}

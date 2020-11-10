@@ -1,0 +1,91 @@
+{% extends 'base.html.twig' %}
+{% block title %}Хитко Разград | Всички категории{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset("css/06-components/components-categories-card.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/06-components/components-paralax-box.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/pages/categories/allCategoriesPage.css") }}">
+{% endblock %}
+
+{% block body %}
+
+<h1 class="text-center p-3">Всички категории </h1>
+
+
+    <div class="c-categories-card">
+        <div class="c-categories-card__text">
+            <h2>Категория A1</h2>
+            <h4>Категория А дава право за управление на мотоциклети и триколесни моторни превозни средства с мощност над 15 kW /без ограничения в кубатурата/.
+
+                Курсът за категория А включва теоретична и практическа подготовка.</h4>
+            <button class="btn btn-primary mt-2">Виж още</button>
+        </div>
+        <div class="c-categories-card__image">
+            <img src="{{ asset("images/cars/motorcycle/motorcycle.jpg") }}" alt="">
+        </div>
+
+    </div>
+    <div class="c-categories-card">
+        <div class="c-categories-card__image">
+            <img src="{{ asset("images/cars/motorcycle/motorbike.jpg") }}" alt="">
+        </div>
+        <div class="c-categories-card__text">
+            <h2>Категория A2</h2>
+            <h4>Категория А дава право за управление на мотоциклети и триколесни моторни превозни средства с мощност над 15 kW /без ограничения в кубатурата/.
+
+                Курсът за категория А включва теоретична и практическа подготовка.</h4>
+            <button class="btn btn-primary mt-2">Виж още</button>
+        </div>
+
+
+    </div>
+    <div class="c-categories-card">
+        <div class="c-categories-card__text">
+            <h2>Категория A</h2>
+            <h4>Категория А дава право за управление на мотоциклети и триколесни моторни превозни средства с мощност над 15 kW /без ограничения в кубатурата/.
+
+                Курсът за категория А включва теоретична и практическа подготовка.</h4>
+            <button class="btn btn-primary mt-2">Виж още</button>
+        </div>
+        <div class="c-categories-card__image">
+            <img src="{{ asset("images/cars/motorcycle/motorbike2.jpg") }}" alt="">
+        </div>
+
+    </div>
+    <div class="c-categories-card">
+        <div class="c-categories-card__image">
+            <img src="{{ asset("images/cars/car.jpg") }}" alt="">
+        </div>
+        <div class="c-categories-card__text">
+            <h2>Категория B1</h2>
+            <h4>Категория А дава право за управление на мотоциклети и триколесни моторни превозни средства с мощност над 15 kW /без ограничения в кубатурата/.
+
+                Курсът за категория А включва теоретична и практическа подготовка.</h4>
+            <button class="btn btn-primary mt-2">Виж още</button>
+        </div>
+
+
+    </div>
+    <div class="c-categories-card">
+        <div class="c-categories-card__text">
+            <h2>Категория B</h2>
+            <h4>Категория А дава право за управление на мотоциклети и триколесни моторни превозни средства с мощност над 15 kW /без ограничения в кубатурата/.
+
+                Курсът за категория А включва теоретична и практическа подготовка.</h4>
+            <button class="btn btn-primary mt-2">Виж още</button>
+        </div>
+        <div class="c-categories-card__image">
+            <img src="{{ asset("images/cars/car2.jpg") }}" alt="">
+        </div>
+
+    </div>
+
+{#paralax information box#}
+    <div class="c-paralax-box c-paralax-box--contactUs mt-4">
+
+        <div class="c-paralax-box__content">
+            <h2 class="mb-4">Свържете се с нас </h2>
+            <button class="c-button">Свържете се с нас </button>
+        </div>
+
+    </div>
+{% endblock %}
