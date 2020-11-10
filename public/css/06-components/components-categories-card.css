@@ -26,6 +26,8 @@
 .c-categories-card__text {
   padding: 1.3rem;
   max-width: 64em;
+  color: #5d5b5b;
+  font-style: italic;
 }
 @media (max-width: 599px) {
   .c-categories-card__text {

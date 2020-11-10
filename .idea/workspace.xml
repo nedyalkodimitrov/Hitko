@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="268f11a9-8e14-461e-bde4-f7fe812e050a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/06-components/components-categories-card.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/06-components/components-categories-card.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/06-components/components-categories-card.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/06-components/components-categories-card.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/06-components/components-categories-card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/06-components/components-categories-card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +182,7 @@
       <workItem from="1603905539376" duration="621000" />
       <workItem from="1604778895179" duration="1040000" />
       <workItem from="1604920440711" duration="13800000" />
-      <workItem from="1604992308755" duration="5469000" />
+      <workItem from="1604992308755" duration="5775000" />
     </task>
     <servers />
   </component>
