@@ -30,8 +30,10 @@
   &__text{
     padding: 1.3rem;
     max-width: 64em;
-    color: #5d5b5b;
-    font-style: italic;
+    h5{
+      color: #5d5b5b;
+      font-style: italic;
+    }
     @include for-phone-only{
       grid-area: text;
     }
