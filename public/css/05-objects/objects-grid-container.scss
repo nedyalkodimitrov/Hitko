@@ -1,0 +1,10 @@
+.o-grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  &--center-items{
+    justify-items: center;
+  }
+  &--cg-1{
+    grid-column-gap: 1em;
+  }
+}

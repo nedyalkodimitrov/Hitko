@@ -1,0 +1,52 @@
+@import "../02-tools/tools-breakpoints";
+@import "../02-tools/tools-grid-templates";
+
+.o-grid-element {
+  grid-column-start: 1;
+  @include grid-start-templates();
+  @include grid-end-templates();
+
+  &--smartphone {
+    @include for-phone-only {
+      @include grid-start-templates();
+      @include grid-end-templates();
+
+    }
+  }
+
+  &--small {
+    @include for-tablet-portrait-up {
+      @include grid-start-templates();
+      @include grid-end-templates();
+
+    }
+  }
+
+  &--medium {
+    @include for-tablet-landscape-up {
+      @include grid-start-templates();
+      @include grid-end-templates();
+
+    }
+  }
+
+  &--large {
+    @include for-desktop-up {
+      @include grid-start-templates();
+      @include grid-end-templates();
+    }
+  }
+
+  &--xl {
+    @include for-big-desktop-up {
+      @include grid-end-templates();
+    }
+  }
+
+}
+
+
+
+
+
+

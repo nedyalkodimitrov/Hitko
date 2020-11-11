@@ -1,0 +1,9 @@
+.o-grid-conteiner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.o-grid-conteiner--center-items {
+  justify-items: center;
+}
+
+/*# sourceMappingURL=objects-grid-container.css.map */

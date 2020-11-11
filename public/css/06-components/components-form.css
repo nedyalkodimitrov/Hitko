@@ -1,0 +1,16 @@
+.c-form {
+  padding: 1rem;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 64em;
+}
+.c-form__title {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1em;
+}
+.c-form__element {
+  margin-bottom: 2em;
+}
+
+/*# sourceMappingURL=components-form.css.map */

@@ -1,0 +1,41 @@
+.o-grid-element {
+  grid-column-start: 0;
+}
+.o-grid-element--1 {
+  grid-column-end: 1;
+}
+.o-grid-element--2 {
+  grid-column-end: 2;
+}
+.o-grid-element--3 {
+  grid-column-end: 3;
+}
+.o-grid-element--4 {
+  grid-column-end: 4;
+}
+.o-grid-element--5 {
+  grid-column-end: 5;
+}
+.o-grid-element--6 {
+  grid-column-end: 6;
+}
+.o-grid-element--7 {
+  grid-column-end: 7;
+}
+.o-grid-element--8 {
+  grid-column-end: 8;
+}
+.o-grid-element--9 {
+  grid-column-end: 9;
+}
+.o-grid-element--10 {
+  grid-column-end: 10;
+}
+.o-grid-element--11 {
+  grid-column-end: 11;
+}
+.o-grid-element--12 {
+  grid-column-end: 12;
+}
+
+/*# sourceMappingURL=objects-grid-element.css.map */

@@ -1,0 +1,62 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Хитко Рз | Начална страница{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset("css/homePageStyle.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/home/homePageStyle.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/components/slideshow.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/components/employeeCard.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/05-objects/objects-absolute-stretched-container.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/06-components/components-contactPage-header.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/06-components/components-input.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/06-components/components-form.css") }}">
+
+
+{% endblock %}
+
+{% block navBarContent %}
+{% endblock %}
+{% block body %}
+    <div class="c-contactPage-header">
+        <img src="{{ asset("images/redPhone.jpg") }}" alt="" class="c-contactPage-header__image o-absolute-stretched-container">
+        <div class="c-contactPage-header__text">
+
+            <h1>Свържете се с нас </h1>
+            <h3 class="c-contactPage-header__text-additional">Имате въпроси? Имате нужда от съвети? Може да се свържете с нас на посочените по дули контакти </h3>
+            <hr>
+            <h4>Телефон за контакти: </h4>
+            <h5><i class="fa fa-phone mr-2  "></i>089 876 9606</h5>
+            <h4 class="mt-2">Може да ни пишете на : </h4>
+            <h5><i class="fa fa-envelop"></i>hitko@gmail.com</h5>
+        </div>
+
+    </div>
+
+
+    <div class="o-wrapper">
+
+        <div class="o-grid-container o-grid-container--cg-1 c-form">
+            <h1 class="c-form__title o-grid-element o-grid-element--end-12 ">Изпратете ни съобщение </h1>
+            <div class="input-group c-form__element o-grid-element o-grid-element--end-6  o-grid-element--smartphone--end-12">
+                <label for="inputEmail">Емейл</label>
+                <input type="email"  placeholder="Попълнете емейла тука" name="email" id="inputEmail" class="c-input c-input--expand-effect" required autofocus>
+                <span class="focus-border"></span>
+            </div>
+            <div class="input-group  c-form__element o-grid-element--start-7  o-grid-element--end-12 o-grid-element--smartphone--start-1 o-grid-element--smartphone--12">
+                <label for="inputEmail">Име</label>
+                <input type="email"  placeholder="Напишете си името" name="email" id="inputEmail" class="c-input c-input--expand-effect" required autofocus>
+                <span class="focus-border"></span>
+            </div>
+            <div class="input-group c-form__element o-grid-element o-grid-element--end-12">
+                <label for="inputEmail">Вашето съобщение</label>
+                <textarea name="" placeholder="Искам да съобщя..." id="" class="c-input c-input--expand-effect" cols="10" rows="8"></textarea>
+                <span class="focus-border"></span>
+            </div>
+
+        </div>
+
+
+    </div>
+
+{% endblock %}

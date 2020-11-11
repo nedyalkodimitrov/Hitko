@@ -25,12 +25,23 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
+
     /**
          * @Route("/motorcycle/a1", name="entryLevelMotorcucleCategory")
      */
     public function entryLevelMotorcucleCategory()
     {
         return $this->render('pages/categoriesPages/motorcycle/entryLevelCategory.html.twig', [
+            'controller_name' => 'HomeController',
+        ]);
+    }
+
+    /**
+         * @Route("/contactUs", name="contactUsPage")
+     */
+    public function contactUs()
+    {
+        return $this->render('pages/contactPage.html.twig', [
             'controller_name' => 'HomeController',
         ]);
     }
