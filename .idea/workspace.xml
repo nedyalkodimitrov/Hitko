@@ -2,63 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="268f11a9-8e14-461e-bde4-f7fe812e050a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/css/06-components/components-category-header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/06-components/components-category-information-card.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/06-components/components-category-introduction-content.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/06-components/components-category-price-card.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/pages/categories/motorcycle/entryLevelMotorcycle.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/road.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/schoolRoom.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/pages/categoriesPages/car/entryLevelCarCategory.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/pages/categoriesPages/car/seniorLevelCarCategory.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/pages/categoriesPages/motorcycle/midLevelMotorcycle.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/pages/categoriesPages/motorcycle/seniorLevelMotorcycleCategory.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/01-settings/settings-fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/01-settings/settings-fonts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/02-tools/tools-grid-templates.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/02-tools/tools-grid-templates.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/03-generic/generic-normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/03-generic/generic-normalize.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/03-generic/generic-normalize.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/03-generic/generic-normalize.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/05-objects/objects-grid-container.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/05-objects/objects-grid-container.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/06-components/components-contactPage-header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/06-components/components-contactPage-header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/components/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/components/all.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/components/all.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/components/all.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/components/slideshow.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/components/slideshow.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/home/homePageStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/home/homePageStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/home/homePageStyle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/home/homePageStyle.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/homePageStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/homePageStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/aboutUs/call-us.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/aboutUs/unishotjiteli-za-nas-preparati.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/aboutUs/unishotjiteli-za-nas.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/cars/car.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/vehicles/cars/car.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/cars/car2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/vehicles/cars/car2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/cars/motorcycle/motorbike.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/vehicles/motorcycle/motorbike.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/cars/motorcycle/motorbike2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/vehicles/motorcycle/motorbike2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/cars/motorcycle/motorcycle.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/vehicles/motorcycle/motorcycle.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/cars/pexels-garvin-st-villier-3311574-min.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/vehicles/cars/pexels-garvin-st-villier-3311574-min.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/cars/pexels-garvin-st-villier-3311574.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/vehicles/cars/pexels-garvin-st-villier-3311574.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/cars/pexels-jan-kopřiva-3354648-min.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/vehicles/cars/pexels-jan-kopřiva-3354648-min.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/cars/pexels-jan-kopřiva-3354648.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/vehicles/cars/pexels-jan-kopřiva-3354648.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/cars/pexels-sourav-mishra-2710043-min.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/vehicles/cars/pexels-sourav-mishra-2710043-min.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/cars/pexels-sourav-mishra-2710043.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/vehicles/cars/pexels-sourav-mishra-2710043.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/disectanct/disectanct-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/houses/100m2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/houses/ot-30-do-50m2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/houses/ot-51-do-70m2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/houses/ot-71-do-100m2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/insects/bylhi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/insects/dyrvenici.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/insects/etajna-sobstvenost.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/insects/grizachi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/insects/hlabarki.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/insects/komari.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/insects/kyrleji.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/insects/mravki.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/insects/mugi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/insects/skolopendra.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/insects/styrsheli.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/insects/vlechugi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/categoriesPages/motorcycle/entryLevelCategory.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/categoriesPages/motorcycle/entryLevelCategory.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/contactPage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/contactPage.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/06-components/components-category-information-card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/06-components/components-category-information-card.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +183,7 @@
       <workItem from="1605080133615" duration="6952000" />
       <workItem from="1605185518274" duration="9297000" />
       <workItem from="1605255521761" duration="12102000" />
-      <workItem from="1605345013714" duration="2824000" />
+      <workItem from="1605345013714" duration="3037000" />
     </task>
     <servers />
   </component>
