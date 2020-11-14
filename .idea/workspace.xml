@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="268f11a9-8e14-461e-bde4-f7fe812e050a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/public/css/06-components/components-category-information-card.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/06-components/components-category-information-card.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/06-components/components-category-information-card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/06-components/components-category-information-card.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -183,7 +184,7 @@
       <workItem from="1605080133615" duration="6952000" />
       <workItem from="1605185518274" duration="9297000" />
       <workItem from="1605255521761" duration="12102000" />
-      <workItem from="1605345013714" duration="3037000" />
+      <workItem from="1605345013714" duration="3112000" />
     </task>
     <servers />
   </component>
