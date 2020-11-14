@@ -1,0 +1,74 @@
+@import '../02-tools/tools-breakpoints';
+
+.c-category-information-card {
+  position: relative;
+  &:before{
+    content: "";
+    position: absolute;
+    top: 0;left: 0;right: 0;bottom: 0;
+    z-index:1
+
+  }
+  &__image-container{
+    @include for-phone-only{
+      height: 32em;
+    }
+   height: 27em;
+   width: 100%;
+   overflow: hidden;
+
+
+  }
+  &__image{
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter:  blur(0.3em) ;
+    z-index: -1;
+
+
+  }
+  &__text-container{
+    color: white;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 64em;
+    width: 100%;
+    padding: 2rem;
+    hr{
+      line-height: 10px;
+      width: 15%;
+      margin: 0.5em 0 ;
+      border: 2px solid white;
+      background-color: white;
+    }
+  }
+ &--text-left{
+   text-align: left;
+ }
+
+  &--text-right{
+   text-align: right;
+    hr{
+      margin: auto;
+      margin-right: 0;
+    }
+ }
+  &--blue-color{
+    &:before{
+
+      background-color: rgba(22, 155, 248,0.85);
+    }
+
+  }
+ &--green-color{
+   &:before{
+     background-color: rgba(85, 203, 187, 0.85 );
+
+   }
+ }
+
+}

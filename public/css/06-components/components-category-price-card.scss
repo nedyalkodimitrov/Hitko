@@ -1,0 +1,21 @@
+.c-category-price-card{
+  margin-top: 1rem;
+  &__text {
+    text-align: center;
+    .fa-coins{
+      color:rgb(255,215,0);
+    }
+  }
+  hr{
+    width: 60%;
+  }
+  &__list {
+    padding: 1em;
+
+  }
+  &__list-element{
+    margin-top: 0.5em;
+    text-align: center;
+  }
+
+}

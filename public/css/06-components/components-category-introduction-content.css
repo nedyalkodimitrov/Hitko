@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
+.c-introduction-content {
+  margin-top: 1em;
+  width: 100%;
+  padding: 1em;
+  font-family: "Montserrat", sans-serif;
+}
+.c-introduction-content__text-container {
+  text-align: center;
+}
+.c-introduction-content__text {
+  display: inline-block;
+  max-width: 64em;
+  text-align: left;
+}
+.c-introduction-content__requirements {
+  display: inline;
+  text-align: left;
+}
+.c-introduction-content__requirements .fas {
+  color: green;
+  margin-right: 0.5em;
+}
+
+/*# sourceMappingURL=components-category-introduction-content.css.map */

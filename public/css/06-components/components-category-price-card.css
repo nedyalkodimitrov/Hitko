@@ -1,0 +1,21 @@
+.c-category-price-card {
+  margin-top: 1rem;
+}
+.c-category-price-card__text {
+  text-align: center;
+}
+.c-category-price-card__text .fa-coins {
+  color: gold;
+}
+.c-category-price-card hr {
+  width: 60%;
+}
+.c-category-price-card__list {
+  padding: 1em;
+}
+.c-category-price-card__list-element {
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+/*# sourceMappingURL=components-category-price-card.css.map */

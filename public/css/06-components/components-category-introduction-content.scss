@@ -1,0 +1,30 @@
+@import '../01-settings/settings-fonts';
+.c-introduction-content{
+  margin-top: 1em ;
+  width: 100%;
+  padding: 1em;
+  font-family: $font-Montserrat;
+
+  &__text-container{
+    text-align: center;
+  }
+  &__text{
+    display: inline-block;
+    max-width: 64em;
+    text-align: left  ;
+    //font-style: ;
+  }
+  &__requirements{
+
+
+    display: inline;
+    text-align: left;
+
+    .fas {
+      color : green;
+      margin-right: 0.5em;
+    }
+  }
+
+
+}

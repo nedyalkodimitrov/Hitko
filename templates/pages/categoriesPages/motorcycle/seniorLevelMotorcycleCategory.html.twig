@@ -1,0 +1,114 @@
+{% extends 'base.html.twig' %}
+{% block title %}Хитко Разград | Категория A1{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset("css/06-components/components-categories-card.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/06-components/components-paralax-box.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/06-components/components-category-header.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/06-components/components-category-introduction-content.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/06-components/components-category-information-card.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/06-components/components-category-price-card.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/pages/categories/categories.css") }}">
+{% endblock %}
+
+{% block body %}
+    <div class="c-categories-header">
+        <div class="c-categories-header__category-name ">
+            <h3>Шофьорски курсове</h3>
+            <hr>
+            <h1>Категория А</h1>
+            <hr>
+        </div>
+        <div class="c-categories-header__image-container ">
+            <img src="{{ asset("images/vehicles/motorcycle/motorcycle.jpg") }}" alt="" class="c-categories-header__image">
+        </div>
+    </div>
+
+
+    <div class="c-introduction-content o-grid-container o-grid-container--cg-2">
+
+        <div class="c-introduction-content__text-container o-grid-element--start-1 o-grid-element--end-7 o-grid-element--smartphone--start-1 o-grid-element--smartphone--end-12">
+            <div class="c-introduction-content__text">
+                <h5>
+                    <h4>Категория А</h4> дава право за управление на мотоциклети и триколесни моторни превозни средства с мощност над 15 kW /без ограничения в кубатурата/.
+
+                    Курсът за категория А включва теоретична и практическа подготовка.
+                </h5>
+
+            </div>
+        </div>
+        <div class="c-introduction-content__requirements-container text-center o-grid-element--start-8 o-grid-element--end-12 o-grid-element--smartphone--start-1 o-grid-element--smartphone--12">
+            <h4>Изисквания</h4>
+            <div class="text-left c-introduction-content__requirements">
+                <h5><i class="fas fa-check"></i>Кандидатът трябва да има навършени 24 години</h5>
+                <h5><i class="fas fa-check"></i>20 години - ако водачът притежава свидетелство за управление на мотоциклет от категория "А2" от поне 2 години.</h5>
+                <h5><i class="fas fa-check"></i>21 години - за управление на триколесни МПС с мощност, превишаваща 15 kW</h5>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="c-category-information-card c-category-information-card--blue-color">
+        <div class="c-category-information-card__image-container">
+            <img src="{{ asset("images/schoolRoom.jpg") }}" alt="" class="c-category-information-card__image">
+        </div>
+        <div class="c-category-information-card__text-container">
+                <h2>ТЕОРЕТИЧНО ОБУЧЕНИЕ</h2>
+            <hr>
+            <h4>При придобита правоспособност от категория В, се преминава към теоретично обучение, което включва 4 учебни часа „Общо устройство на мотоциклета”;
+                за лица, които не притежават правоспособност от категория В – теоретичното обучение е в размер на 36 часа „Безопасност на движението” и 4 часа „Общо устройство на мотоциклета</h4>
+        </div>
+    </div>
+
+    <div class="c-category-information-card c-category-information-card--text-right c-category-information-card--green-color">
+        <div class="c-category-information-card__image-container">
+            <img src="{{ asset("images/road.jpg") }}" alt="" class="c-category-information-card__image">
+        </div>
+        <div class="c-category-information-card__text-container">
+                <h2>Практическо обучение</h2>
+            <hr>
+            <h4>Практическото обучение включва 20 учебни часа управление на мотоциклет. Обучението се провежда на полигон и управление в градски условия градски условия. Обучението на полигон представлява изпълнение на 5 елемента.</h4>
+        </div>
+    </div>
+
+
+
+    <div class="c-category-price-card ">
+        <div class="c-category-price-card__text">
+            <h2>Цени <i class="fas fa-coins">  </i></h2>
+        </div>
+        <hr>
+        <div class="c-category-price-card__list o-grid-container o-grid-container--cg-1">
+            <div class="c-category-price-card__list-element o-grid-element--start-1 o-grid-element--medium--end-2 o-grid-element--small--end-6 o-grid-element--smartphone--start-1 o-grid-element--smartphone--end-6">
+                <h4 class="c-category-price-card__list-element__price">390лв</h4>
+                <h5 class="c-category-price-card__list-element__text">Цена на курса</h5>
+            </div>
+            <div class="c-category-price-card__list-element o-grid-element--medium--start-3 o-grid-element--medium--end-4   o-grid-element--small--start-7 o-grid-element--small--end-12 o-grid-element--smartphone--start-7 o-grid-element--smartphone--end-12 ">
+                <h4 class="c-category-price-card__list-element__price">60лв</h4>
+                <h5 class="c-category-price-card__list-element__text">Административна такса</h5>
+            </div>
+            <div class="c-category-price-card__list-element o-grid-element--medium--start-5 o-grid-element--medium--end-6 o-grid-element--small--start-1 o-grid-element--small--end-6 o-grid-element--smartphone--start-1 o-grid-element--smartphone--end-6">
+                <h4 class="c-category-price-card__list-element__price">60лв</h4>
+                <h5 class="c-category-price-card__list-element__text">Вътрешен изпит по практика</h5>
+
+            </div>
+            <div class="c-category-price-card__list-element o-grid-element--medium--start-7 o-grid-element--medium--end-8    o-grid-element--small--start-7 o-grid-element--small--end-12 o-grid-element--smartphone--start-7 o-grid-element--smartphone--end-12 ">
+                <h4 class="c-category-price-card__list-element__price">60лв</h4>
+                <h5 class="c-category-price-card__list-element__text">Външен изпит по практика пред ИА“АА“</h5>
+                  </div>
+            <div class="c-category-price-card__list-element o-grid-element--medium--start-9 o-grid-element--medium--end-10  o-grid-element--small--start-1 o-grid-element--small--end-6 o-grid-element--smartphone--start-1 o-grid-element--smartphone--end-6">
+                <h4 class="c-category-price-card__list-element__price">60лв</h4>
+                <h5 class="c-category-price-card__list-element__text">Външен теоретичен изпит пред ИА“АА“ /когато нямате категория „В“/</h5>
+
+            </div>
+            <div class="c-category-price-card__list-element o-grid-element--medium--start-11 o-grid-element--medium--end-12    o-grid-element--small--start-7 o-grid-element--small--end-12 o-grid-element--smartphone--start-7 o-grid-element--smartphone--end-12 ">
+                <h4 class="c-category-price-card__list-element__price">60лв</h4>
+                <h5 class="c-category-price-card__list-element__text">Вътрешен теоретичен изпит /когато нямате категория „В“/</h5>
+
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
