@@ -31,7 +31,7 @@ class HomeController extends AbstractController
      */
     public function entryLevelMotorcucleCategory()
     {
-        return $this->render('pages/categoriesPages/motorcycle/entryLevelCategory.html.twig', [
+        return $this->render('pages/categoriesPages/motorcycle/entryLevelMotorcycleCategory.html.twig', [
             'controller_name' => 'HomeController',
         ]);
     }

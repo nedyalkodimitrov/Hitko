@@ -11,9 +11,9 @@
   }
   &__image-container{
     @include for-phone-only{
-      height: 40em;
+      height: 35em;
     }
-   height: 27em;
+   height: 20em;
    width: 100%;
    overflow: hidden;
 
@@ -38,6 +38,7 @@
     max-width: 64em;
     width: 100%;
     padding: 2rem;
+
     hr{
       line-height: 10px;
       width: 15%;
@@ -45,16 +46,25 @@
       border: 2px solid white;
       background-color: white;
     }
+
+
   }
  &--text-left{
    text-align: left;
  }
 
   &--text-right{
-   text-align: right;
+    text-align: right;
     hr{
       margin: auto;
       margin-right: 0;
+    }
+    @include for-phone-only{
+      text-align: left;
+      hr{
+        margin: 0.5em 0;
+
+      }
     }
  }
   &--blue-color{

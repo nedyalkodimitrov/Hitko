@@ -5,6 +5,7 @@
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset("css/homePageStyle.css") }}">
     <link rel="stylesheet" href="{{ asset("css/home/homePageStyle.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/pages/contactusPage/contactUsPageStyle.css") }}">
     <link rel="stylesheet" href="{{ asset("css/components/slideshow.css") }}">
     <link rel="stylesheet" href="{{ asset("css/components/employeeCard.css") }}">
     <link rel="stylesheet" href="{{ asset("css/05-objects/objects-absolute-stretched-container.css") }}">
@@ -40,12 +41,12 @@
             <h1 class="c-form__title o-grid-element o-grid-element--end-12 ">Изпратете ни съобщение </h1>
             <div class="input-group c-form__element o-grid-element o-grid-element--end-6  o-grid-element--smartphone--end-12">
                 <label for="inputEmail">Емейл</label>
-                <input type="email"  placeholder="Попълнете емейла тука" name="email" id="inputEmail" class="c-input c-input--expand-effect" required autofocus>
+                <input type="email"  placeholder="Попълнете емейла тука" name="email" id="inputEmail" class="c-input c-input--expand-effect" required >
                 <span class="focus-border"></span>
             </div>
             <div class="input-group  c-form__element o-grid-element--start-7  o-grid-element--end-12 o-grid-element--smartphone--start-1 o-grid-element--smartphone--12">
                 <label for="inputEmail">Име</label>
-                <input type="email"  placeholder="Напишете си името" name="email" id="inputEmail" class="c-input c-input--expand-effect" required autofocus>
+                <input type="email"  placeholder="Напишете си името" name="email" id="inputEmail" class="c-input c-input--expand-effect" required >
                 <span class="focus-border"></span>
             </div>
             <div class="input-group c-form__element o-grid-element o-grid-element--end-12">
@@ -57,6 +58,14 @@
         </div>
 
 
+    </div>
+
+
+    <div class="location o-wrapper">
+        <div class="text">
+            <h2>Нашето местоположение</h2>
+        </div>
+        <div class="gmap_canvas"><iframe  id="gmap_canvas" src="https://maps.google.com/maps?q=Vit+21А,+7200+g.k.+Osvobozhdenie,+Razgrad&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com"></a></div>
     </div>
 
 {% endblock %}

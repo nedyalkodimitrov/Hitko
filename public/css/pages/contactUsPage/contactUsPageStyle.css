@@ -1,0 +1,13 @@
+.location {
+  width: 100%;
+}
+.location .text {
+  text-align: center;
+  padding: 2em;
+}
+.location iframe {
+  width: 100%;
+  height: 22em;
+}
+
+/*# sourceMappingURL=contactUsPageStyle.css.map */

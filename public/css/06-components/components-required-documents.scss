@@ -1,0 +1,35 @@
+@import "../02-tools/tools-breakpoints";
+
+.c-required-documents{
+  @include for-phone-only{
+    justify-content: left;
+  }
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+  flex-wrap: wrap;
+  hr{
+    width: 10%;
+    border: 2px solid black;
+    margin: 1em auto;
+  }
+
+  &__title{
+    margin-bottom: 1em;
+    flex: 0 0 100%;
+    text-align: center;
+  }
+  &__document {
+    @include for-phone-only{
+      flex: 0 0 100%;
+      margin-top: 0.5em;
+    }
+    margin-right: 2em ;
+    i{
+      color: #53B8AC;
+      margin-right: 0.4em;
+    }
+  }
+}

@@ -3,19 +3,23 @@
   margin-top: 1em ;
   width: 100%;
   padding: 1em;
-  font-family: $font-Montserrat;
+  margin-bottom: 2em;
 
   &__text-container{
     text-align: center;
+    padding: 1em;
   }
   &__text{
+
     display: inline-block;
     max-width: 64em;
     text-align: left  ;
     //font-style: ;
   }
+  &__requirements-container{
+    padding: 1em;
+  }
   &__requirements{
-
 
     display: inline;
     text-align: left;

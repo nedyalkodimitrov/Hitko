@@ -1,13 +1,15 @@
 .c-category-price-card{
-  margin-top: 1rem;
+  margin-top: 2rem;
   &__text {
     text-align: center;
     .fa-coins{
-      color:rgb(255,215,0);
+      color:goldenrod;
     }
   }
   hr{
-    width: 60%;
+    width: 10%;
+    border: 2px solid black;
+    margin: 1em auto;
   }
   &__list {
     padding: 1em;

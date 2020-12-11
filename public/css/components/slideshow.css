@@ -90,7 +90,7 @@ button, input {
     top: 0;
     width: 500%;
     height: 100%;
-    background-image: url("../../images/vehicles/cars/pexels-garvin-st-villier-3311574-min.jpg");
+    background-image: url("../../images/vehicles/cars/pexels-garvin-st-villier-3311574.jpg");
 }
 .slider--el.anim-5parts .part.part-1 {
     transition: transform 1.1s 0.3s;
@@ -148,7 +148,7 @@ button, input {
     background-size: cover;
     width: 300%;
     height: 300%;
-    background-image: url("../../images/vehicles/cars/pexels-jan-kopřiva-3354648-min.jpg");
+    background-image: url("../../images/vehicles/cars/pexels-jan-kopřiva-3354648.jpg");
 }
 .slider--el.anim-9parts .part.left-top {
     top: 0%;
@@ -251,7 +251,7 @@ button, input {
     background-size: cover;
     width: 300%;
     height: 100%;
-    background-image: url("../../images/vehicles/cars/pexels-sourav-mishra-2710043-min.jpg");;
+    background-image: url("../../images/vehicles/cars/pexels-sourav-mishra-2710043.jpg");;
 }
 .slider--el.anim-3parts .part.left {
     left: 0;

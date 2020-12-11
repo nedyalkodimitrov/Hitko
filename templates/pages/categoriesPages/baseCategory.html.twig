@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{asset("css/components/footer.css")}}" rel="stylesheet">
+    <link href="{{asset("css/components/navbarStyle.css")}}" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset("css/components/all.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/06-components/components-categories-card.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/06-components/components-paralax-box.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/06-components/components-category-header.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/06-components/components-category-introduction-content.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/06-components/components-category-information-card.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/06-components/components-category-price-card.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/06-components/components-required-documents.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/pages/categories/categories.css") }}">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="{{ asset("js/homePageAnimation.js") }}" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/58cf8ffc69.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    {% block stylesheets %}{% endblock %}
+</head>
+<body>
+
+<div>
+    <div class="col-lg-12  col-12 m-0 justify-content-around row header-information" >
+        <a class="col-5 col-md-3 col-lg-3 justify-content-center row my-auto m-0 p-0" href="">
+            <i class="fas fa-phone-alt col-2 p-0"></i>
+            <h5 class="col-10 p-0 ml-0">089 876 9606</h5>
+        </a>
+        <a class="col-5 col-lg-4 col-md-4 row justify-content-center p-0 my-auto m-0" href="">
+            <i class="fa fa-clock-o col-2 p-0 my-auto" aria-hidden="true"></i>
+            <div class="col-10 my-auto p-0 m-0">
+                <h5 class="p-0 m-0 ml-1">Работно време</h5>
+                <h6 class="p-0 m-0 ml-1">от 09:00 - 18:00</h6>
+            </div>
+        </a>
+
+    </div>
+</div>
+
+
+<nav class="navbar large-navbar navbar-expand-lg  navbar-light bg-white py-3 shadow-sm homePage-start-nav" id="navbar">
+    <div class="container mx-auto col-12  p-0 row">
+
+        <a href="{{ path("home") }}" class="justify-content-center  demo-logo-text"><h4>Хитко</h4></a>
+        <button class="navbar-toggler" id="navbar-toggler-button" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
+            <div class="nav-toggle-button-container" onclick="changeToggleMenuButton(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </button>
+        <div id="navbarNavDropdown" class="collapse navbar-collapse " >
+            <ul class="nav navbar-nav menu"  id="menu">
+                <li><a href="{{ path("home") }}">Начало</a></li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown">Курсове за шофюри </a>
+                    <ul class="dropdown-menu" role="menu" id="firs-dropdown">
+
+                        <li><a href="{{ path("allCategories") }}" >Всички категории</a></li>
+                        <li><a href="#" >Категория A1</a></li>
+                        <li><a href="#" >Категория A2</a></li>
+                        <li><a href="{{ path('motorcycle-seniorLevel') }}" >Категория A</a></li>
+                        <li><a href="{{ path('car-entryLevel') }}" >Категория B1</a></li>
+                        <li><a href="{{ path('car-seniorLevel') }}" >Категория B</a></li>
+                        <li><a href="#" >Категория C1</a></li>
+                        <li><a href="#" >Категория C</a></li>
+                        <li><a href="#" >Категория C + E</a></li>
+                        <li><a href="#" >Категория B + E</a></li>
+
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" href="#">Курсове за правосподобност </a>
+                    <ul class="dropdown-menu" role="menu" id="firs-dropdown">
+
+                        <li><a href="#" >Мотокар</a></li>
+                        <li><a href="#" >Багер</a></li>
+
+
+                    </ul>
+                </li>
+
+                <li><a href="{{ path("contactUsPage") }}">Контакти</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container row col-12 m-0 p-0">
+    <div class="col-12 m-0 p-0">
+        {% block navBarContent %}
+        {% endblock %}
+    </div>
+</div>
+
+
+<div class="c-categories-header aniview slow animate__animated animate__slideInRight" data-av-animation="slideInRight">
+    <div class="c-categories-header__category-name ">
+        <h3>Шофьорски курсове</h3>
+        <hr>
+        {% block categoryName %}{% endblock %}
+        <hr>
+    </div>
+    <div class="c-categories-header__image-container ">
+        {# has to contain  c-categories-header__image
+<img src="{{ asset("images/vehicles/motorcycle/motorcycle.jpg") }}" alt="" class="c-categories-header__image">#}
+
+        {% block headerImage %}
+        {% endblock %}
+    </div>
+</div>
+
+
+<div class="c-introduction-content o-grid-container o-grid-container--cg-2">
+
+    <div class="c-introduction-content__text-container o-grid-element--start-1 o-grid-element--end-7 o-grid-element--smartphone--start-1 o-grid-element--smartphone--end-12">
+        <div class="c-introduction-content__text">
+            <h4>{% block categoryIntroName %}{% endblock %}</h4>
+            <h5>
+                {% block categoryIntroText%}{% endblock %}
+            </h5>
+
+        </div>
+    </div>
+    <div class="c-introduction-content__requirements-container text-center o-grid-element--start-8 o-grid-element--end-12 o-grid-element--smartphone--start-1 o-grid-element--smartphone--12 mt-sm-0 mt-5">
+        <h4>Изисквания</h4>
+        <div class="text-left c-introduction-content__requirements">
+            {#                they have to be like these
+                <h5><i class="fas fa-check"></i>Кандидатът трябва да има навършени 24 години</h5>
+                <h5><i class="fas fa-check"></i>20 години - ако водачът притежава свидетелство за управление на мотоциклет от категория "А2" от поне 2 години.</h5>
+                <h5><i class="fas fa-check"></i>21 години - за управление на триколесни МПС с мощност, превишаваща 15 kW</h5>
+            #}
+            {% block requirements %}
+            {% endblock %}
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="c-category-information-card c-category-information-card--blue-color">
+    <div class="c-category-information-card__image-container">
+        <img src="{{ asset("images/schoolRoom.jpg") }}" alt="" class="c-category-information-card__image">
+    </div>
+    <div class="c-category-information-card__text-container">
+        <h2>ТЕОРЕТИЧНА ПОДГОТОВКА</h2>
+        <hr>
+        <h5>{% block informationCardFirstText %}{% endblock %}</h5>
+    </div>
+</div>
+
+<div data-av-animation="slideInRight" class="aniview slow c-category-information-card c-category-information-card--text-right c-category-information-card--green-color">
+    <div class="c-category-information-card__image-container">
+        <img src="{{ asset("images/road.jpg") }}" alt="" class="c-category-information-card__image">
+    </div>
+    <div class="c-category-information-card__text-container">
+        <h2>ПРАКТИЧЕСКА ПОДГОТОВКА</h2>
+        <hr>
+        <h5>{% block informationCardSecondText %}{% endblock %}</h5>
+    </div>
+</div>
+
+<div class="c-required-documents">
+    <div class="c-required-documents__title">
+        <h2>Необходими документи</h2>
+        <hr>
+    </div>
+    {#   the dicuments have to have c-required-documents__document class !!! #}
+    {#    <div class="c-required-documents__document"><h4><i class="fa fa-id-card-o" aria-hidden="true"></i>Лична карта</h4></div>#}
+    {#    <div class="c-required-documents__document"><h4><i class="fa fa-id-card-o" aria-hidden="true"></i>Шофьорска книжка</h4></div>#}
+    {#    <div class="c-required-documents__document"><h4><i class="fa fa-camera" aria-hidden="true"></i>Снимка</h4></div>#}
+    {#    <div class="c-required-documents__document"><h4><i class="fa fa-file-text-o" aria-hidden="true"></i>Копие на диплома за завършено образование</h4></div>#}
+    {% block necessaryDocuments %}
+    {% endblock %}
+</div>
+
+
+<div class="c-category-price-card  aniview  " data-av-animation="fadeIn">
+    <div class="c-category-price-card__text">
+        <h2>Цени <i class="fas fa-coins">  </i></h2>
+    </div>
+    <hr>
+    <div class="c-category-price-card__list o-grid-container o-grid-container--cg-1">
+        {#  it has to look like these
+
+            <div class="c-category-price-card__list-element o-grid-element--start-1 o-grid-element--medium--end-2 o-grid-element--small--end-6 o-grid-element--smartphone--start-1 o-grid-element--smartphone--end-6">
+                <h4 class="c-category-price-card__list-element__price">390лв</h4>
+                <h5 class="c-category-price-card__list-element__text">Цена на курса</h5>
+            </div>
+            <div class="c-category-price-card__list-element o-grid-element--medium--start-3 o-grid-element--medium--end-4   o-grid-element--small--start-7 o-grid-element--small--end-12 o-grid-element--smartphone--start-7 o-grid-element--smartphone--end-12 ">
+                <h4 class="c-category-price-card__list-element__price">60лв</h4>
+                <h5 class="c-category-price-card__list-element__text">Административна такса</h5>
+            </div>
+            <div class="c-category-price-card__list-element o-grid-element--medium--start-5 o-grid-element--medium--end-6 o-grid-element--small--start-1 o-grid-element--small--end-6 o-grid-element--smartphone--start-1 o-grid-element--smartphone--end-6">
+                <h4 class="c-category-price-card__list-element__price">60лв</h4>
+                <h5 class="c-category-price-card__list-element__text">Вътрешен изпит по практика</h5>
+
+            </div>
+            <div class="c-category-price-card__list-element o-grid-element--medium--start-7 o-grid-element--medium--end-8    o-grid-element--small--start-7 o-grid-element--small--end-12 o-grid-element--smartphone--start-7 o-grid-element--smartphone--end-12 ">
+                <h4 class="c-category-price-card__list-element__price">60лв</h4>
+                <h5 class="c-category-price-card__list-element__text">Външен изпит по практика пред ИА“АА“</h5>
+                  </div>
+            <div class="c-category-price-card__list-element o-grid-element--medium--start-9 o-grid-element--medium--end-10  o-grid-element--small--start-1 o-grid-element--small--end-6 o-grid-element--smartphone--start-1 o-grid-element--smartphone--end-6">
+                <h4 class="c-category-price-card__list-element__price">60лв</h4>
+                <h5 class="c-category-price-card__list-element__text">Външен теоретичен изпит пред ИА“АА“ /когато нямате категория „В“/</h5>
+
+            </div>
+            <div class="c-category-price-card__list-element o-grid-element--medium--start-11 o-grid-element--medium--end-12    o-grid-element--small--start-7 o-grid-element--small--end-12 o-grid-element--smartphone--start-7 o-grid-element--smartphone--end-12 ">
+                <h4 class="c-category-price-card__list-element__price">60лв</h4>
+                <h5 class="c-category-price-card__list-element__text">Вътрешен теоретичен изпит /когато нямате категория „В“/</h5>
+
+            </div>
+        #}
+
+        {% block prices %}
+        {% endblock %}
+    </div>
+</div>
+
+<div class="aniview" data-av-animation="slideInRight"></div>
+
+<script>
+    var options = {
+        animateThreshold: 100,
+        scrollPollInterval: 300
+    }
+    $('.aniview').AniView();
+
+</script>
+
+{% block javascripts %}{% endblock %}
+
+<footer class="footer-section">
+    <div class="container col-12">
+        <div class="footer-cta pt-5 pb-5">
+        </div>
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <h2>Хитко</h2>
+                        </div>
+                        <div class="footer-text">
+                            <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                elit,Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Useful Links</h3>
+                        </div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">services</a></li>
+                            <li><a href="#">portfolio</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Expert Team</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Latest News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Subscribe</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Email Address">
+                                <button><i class="fab fa-telegram-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Policy</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+        console.log(22);
+    }
+
+    function changeToggleMenuButton(x) {
+        x.classList.toggle("change");
+    }
+
+
+</script>
+</body>
+</html>

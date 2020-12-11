@@ -1,14 +1,16 @@
 .c-category-price-card {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .c-category-price-card__text {
   text-align: center;
 }
 .c-category-price-card__text .fa-coins {
-  color: gold;
+  color: goldenrod;
 }
 .c-category-price-card hr {
-  width: 60%;
+  width: 10%;
+  border: 2px solid black;
+  margin: 1em auto;
 }
 .c-category-price-card__list {
   padding: 1em;

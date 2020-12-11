@@ -1,34 +1,32 @@
 {% extends 'pages/categoriesPages/baseCategory.html.twig' %}
-{% block title %}Хитко Разград | Категория A{% endblock %}
+{% block title %}Хитко Разград | Категория A1{% endblock %}
 
 
 {% block body %}
-    {% block categoryName %} <h1>   Категория А</h1>{% endblock %}
+    {% block categoryName %} <h1>   Категория А1</h1>{% endblock %}
     {% block headerImage %}
-        <img src="{{ asset("images/vehicles/motorcycle/motorbike2.jpg") }}" alt="" class="c-categories-header__image">
+        <img src="{{ asset("images/vehicles/motorcycle/motorcycle.jpg") }}" alt="" class="c-categories-header__image">
     {% endblock %}
 
-    {% block categoryIntroName %}Категория А{% endblock %}
-    {% block categoryIntroText%}  дава право за управление на мотоциклети и триколесни моторни превозни средства с мощност над 15 kW /без ограничения в кубатурата/.
-        Курсът за категория А включва <i><b>теоретична</b></i> и <i><b>практическа</b></i> подготовка.
+    {% block categoryIntroName %}Категория А1{% endblock %}
+    {% block categoryIntroText%} дава право на управление на мотоциклет  с работен обем на двигател до 125см3,с максимална мощност не повече от 11kW и с отношение мощност/тегло, което не превишава  0,1 kW/kg .
+        Курсът за категория А1 включва теоретична и практическа подготовка.
     {% endblock %}
 
     {% block requirements %}
-        <h5><i class="fas fa-check"></i>Кандидатът трябва да има навършени 24 години</h5>
-        <h5><i class="fas fa-check"></i>20 години - ако водачът притежава свидетелство за управление на мотоциклет от категория "А2" от поне 2 години.</h5>
-        <h5><i class="fas fa-check"></i>21 години - за управление на триколесни МПС с мощност, превишаваща 15 kW</h5>
+        <h5><i class="fas fa-check"></i>Кандидатът за придобиване на правоспособност за управление на МПС от категория А1 трябва да има навършени не по-малко от 16 години, като курсът може да бъде започнат при навършени 15 години и 9 месеца.</h5>
+
     {% endblock %}
 
     {% block necessaryDocuments %}
-        <div class="c-required-documents__document"><h4><i class="fa fa-id-card-o" aria-hidden="true"></i>Лична карта</h4></div>
-        <div class="c-required-documents__document"><h4><i class="fa fa-id-card-o" aria-hidden="true"></i>Копие на диплома</h4></div>
-        <div class="c-required-documents__document"><h4><i class="fa fa-camera" aria-hidden="true"></i>Снимка</h4></div>
-        <div class="c-required-documents__document"><h4><i class="fa fa-file-text-o" aria-hidden="true"></i>Свидетелство за управление на МПС минимум категория В /ако притежават такова/.</h4></div>
+            <div class="c-required-documents__document"><h4><i class="fa fa-id-card-o" aria-hidden="true"></i>Лична карта</h4></div>
+            <div class="c-required-documents__document"><h4><i class="fa fa-camera" aria-hidden="true"></i>Снимка</h4></div>
 
     {% endblock %}
 
-    {% block informationCardFirstText %}При придобита правоспособност от категория В, се преминава към теоретично обучение, което включва 4 учебни часа „Общо устройство на мотоциклета”;
-        за лица, които не притежават правоспособност от категория В – теоретичното обучение е в размер на 36 часа „Безопасност на движението” и 4 часа „Общо устройство на мотоциклета
+
+    {% block informationCardFirstText %}При придобита правоспособност от категория А1, се преминава към теоретично обучение, което включва 4 учебни часа „Общо устройство на мотоциклета”;
+        за лица, които не притежават правоспособност от категория А1 – теоретичното обучение е в размер на 36 часа „Безопасност на движението” и 4 часа „Общо устройство на мотоциклета
     {% endblock %}
     {% block informationCardSecondText %}
         Практическото обучение включва 20 учебни часа управление на мотоциклет. Обучението се провежда на полигон и управление в градски условия градски условия. Обучението на полигон представлява изпълнение на 5 елемента.

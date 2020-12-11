@@ -11,13 +11,13 @@
   z-index: 1;
 }
 .c-category-information-card__image-container {
-  height: 27em;
+  height: 20em;
   width: 100%;
   overflow: hidden;
 }
 @media (max-width: 599px) {
   .c-category-information-card__image-container {
-    height: 40em;
+    height: 35em;
   }
 }
 .c-category-information-card__image {
@@ -54,6 +54,14 @@
 .c-category-information-card--text-right hr {
   margin: auto;
   margin-right: 0;
+}
+@media (max-width: 599px) {
+  .c-category-information-card--text-right {
+    text-align: left;
+  }
+  .c-category-information-card--text-right hr {
+    margin: 0.5em 0;
+  }
 }
 .c-category-information-card--blue-color:before {
   background-color: rgba(22, 155, 248, 0.85);
