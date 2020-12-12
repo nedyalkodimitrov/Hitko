@@ -3,7 +3,7 @@
 {% block title %}Хитко Рз | Начална страница{% endblock %}
 {% block stylesheets %}
     {{ parent() }}
-    <link rel="stylesheet" href="{{ asset("css/homePageStyle.css") }}">
+{#    <link rel="stylesheet" href="{{ asset("css/homePageStyle.css") }}">#}
     <link rel="stylesheet" href="{{ asset("css/home/homePageStyle.css") }}">
     <link rel="stylesheet" href="{{ asset("css/components/slideshow.css") }}">
     <link rel="stylesheet" href="{{ asset("css/components/employeeCard.css") }}">
@@ -76,7 +76,7 @@
         </div>
     </div>
 
-    <div class="container row col-12  c-aboutUs m-0 " >
+    <div class="container row col-12  c-aboutUs m-0 u-slideRight slideRight-el-1" >
         <div class="col-12 mx-auto row ">
 
             <div class="c-aboutUs__text col-12 text-center "><h2>Защо да изберерете нас</h2></div>
@@ -103,75 +103,77 @@
     </div>
 
 
-    <div class="row col-12 justify-content-center employee-container m-0" >
-            <div class="col-12 text-holder">
-                <h2>Запознайте се с част от нашия екип</h2>
-            </div>
+    <div class="row col-12 justify-content-center employee-container m-0 p-0 u-slideLeft slideLeft-el-1" >
+          <div class="content row p-2 m-0 col-12">
+              <div class="col-12 text-holder">
+                  <h2>Запознайте се с част от нашия екип</h2>
+              </div>
 
-            <div class="card-container col-6  col-lg-3">
-                <div class="property-card">
-                    <a href="#">
-                        <div class="property-image">
-{#                            <div class="property-image-title">#}
-{#                                <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->#}
-{#                            </div>#}
-                        </div></a>
-                    <div class="property-description">
-                        <h5> Ива Стефанова </h5>
-                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
-                    </div>
-                    <a href="#">
+              <div class="card-container col-6  col-lg-3">
+                  <div class="property-card">
+                      <a href="#">
+                          <div class="property-image">
+                              {#                            <div class="property-image-title">#}
+                              {#                                <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->#}
+                              {#                            </div>#}
+                          </div></a>
+                      <div class="property-description">
+                          <h5> Ива Стефанова </h5>
+                          <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+                      </div>
+                      <a href="#">
 
-                    </a>
-                </div>
-            </div>
-            <div class="card-container col-6  col-lg-3">
-                <div class="property-card">
-                    <div class="property-image">
-                        <div class="property-image-title">
-                            <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
-                        </div>
-                    </div>
-                    <div class="property-description">
-                        <h5> Ива Стефанова </h5>
-                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
-                    </div>
+                      </a>
+                  </div>
+              </div>
+              <div class="card-container col-6  col-lg-3">
+                  <div class="property-card">
+                      <div class="property-image">
+                          <div class="property-image-title">
+                              <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                          </div>
+                      </div>
+                      <div class="property-description">
+                          <h5> Ива Стефанова </h5>
+                          <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+                      </div>
 
-                </div>
-            </div>
-            <div class="card-container col-6 col-lg-3 ">
-                <div class="property-card ">
+                  </div>
+              </div>
+              <div class="card-container col-6 col-lg-3 ">
+                  <div class="property-card ">
 
-                    <div class="property-image">
-                        <div class="property-image-title">
-                            <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
-                        </div>
-                    </div>
-                    <div class="property-description">
-                        <h5> Ива Стефанова </h5>
-                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
-                    </div>
+                      <div class="property-image">
+                          <div class="property-image-title">
+                              <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                          </div>
+                      </div>
+                      <div class="property-description">
+                          <h5> Ива Стефанова </h5>
+                          <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+                      </div>
 
-                </div>
-            </div>
-            <div class="card-container col-6  col-lg-3">
-                <div class="property-card">
-                    <div class="property-image">
-                        <div class="property-image-title">
-                            <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
-                        </div>
-                    </div>
-                    <div class="property-description">
-                        <h5> Ива Стефанова </h5>
-                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
-                    </div>
+                  </div>
+              </div>
+              <div class="card-container col-6  col-lg-3">
+                  <div class="property-card">
+                      <div class="property-image">
+                          <div class="property-image-title">
+                              <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                          </div>
+                      </div>
+                      <div class="property-description">
+                          <h5> Ива Стефанова </h5>
+                          <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+                      </div>
 
-                </div>
-            </div>
+                  </div>
+              </div>
+          </div>
     </div>
 
 
-    <div class="col-12 container-color m-0 p-0 pb-5 pt-5 row">
+    <div class="col-12 container-color m-0 p-0 pb-5 pt-5 row u-slideRight slideRight-el-2">
         <div class="col-12 col-lg-11 mx-auto p-0 m-0 ">
             <div class="col-10 mx-auto">
                 <hr>
@@ -203,7 +205,7 @@
         </div>
     </div>
 
-    <div class="col-12 row o-container p-0 m-0 what-we-offer-container ">
+    <div class="col-12 row o-container p-0 m-0 what-we-offer-container u-slideLeft slideLeft-el-2">
 
        <div class="content row col-12">
            <h3 class="col-12 text-center">Какво можем да ви предложим?</h3>
@@ -225,6 +227,46 @@
 
     </div>
     <script>
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        var slideLeftEl = document.getElementsByClassName("u-slideLeft");
+        var slideRightEl = document.getElementsByClassName("u-slideRight");
+
+        for (var i = 1; i <= slideLeftEl.length ; i++){
+            gsap.to(".slideLeft-el-"+i, {
+                scrollTrigger: {
+                    trigger: ".slideLeft-el-"+i,
+                    // scrub: true,
+                    start: "top center",
+                    toggleActions: "play pause resume none"
+                },
+
+                x:0 ,
+                duration: 1.5,
+                ease: "power2.out"
+
+            });
+        }
+
+        for (var i = 1; i <= slideRightEl.length; i++){
+            gsap.to(".slideRight-el-"+i, {
+                scrollTrigger: {
+                    trigger: ".slideRight-el-"+i,
+                    // scrub: true,
+
+                    start: "top center",
+
+                    toggleActions: "play pause resume none"
+                },
+
+                x:0 ,
+                duration: 1.5,
+                ease: "power2.out"
+
+            });
+        }
+
         window.onscroll = function() {myFunction()};
 
         var navbar = document.getElementById("navbar");

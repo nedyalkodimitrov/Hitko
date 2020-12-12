@@ -1,7 +1,28 @@
-.employee-container {
-  background-color: rgba(0,0,0,0.7);
-  height: auto;
-  padding: 2em 0 ;
+.employee-container{
+  background-color: rgba(0, 0, 0, 0.7);
+
+  &::before {
+    content: "";
+    background-color: #F1F4FFFF;
+    background: url("../../images/vehicles/cars/pexels-garvin-st-villier-3311574.jpg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;left: 0;right: 0;bottom: 0;
+
+  }
+  .content{
+
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    z-index: 1;
+    margin: 0;
+    padding: 0 ;
+  }
+
   .text-holder {
     margin: 0.8em 0;
     color: white;
