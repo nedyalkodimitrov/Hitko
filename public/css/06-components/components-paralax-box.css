@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 200px;
+  height: 225px;
 }
 .c-paralax-box::before {
   content: " ";
@@ -14,7 +14,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 .c-paralax-box__content {
   color: white;

@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="268f11a9-8e14-461e-bde4-f7fe812e050a" name="Default Changelist" comment="" />
+    <list default="true" id="268f11a9-8e14-461e-bde4-f7fe812e050a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/css/07-utilities/utilities-body-onLoad-animation.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/07-utilities/utilities-slideElements.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/lib/TweenLite.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/lib/TweenMax.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/components/footer.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/components/menu.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/03-generic/generics-normalize.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/03-generic/generics-normalize.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/06-components/components-button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/06-components/components-button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/06-components/components-categories-card.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/06-components/components-categories-card.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/06-components/components-categories-card.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/06-components/components-categories-card.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/06-components/components-categories-card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/06-components/components-categories-card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/06-components/components-category-header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/06-components/components-category-header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/06-components/components-category-introduction-content.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/06-components/components-category-introduction-content.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/06-components/components-category-introduction-content.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/06-components/components-category-introduction-content.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/06-components/components-category-introduction-content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/06-components/components-category-introduction-content.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/06-components/components-paralax-box.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/06-components/components-paralax-box.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/06-components/components-paralax-box.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/06-components/components-paralax-box.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/06-components/components-paralax-box.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/06-components/components-paralax-box.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/06-components/components-required-documents.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/06-components/components-required-documents.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/06-components/components-required-documents.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/06-components/components-required-documents.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/06-components/components-required-documents.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/06-components/components-required-documents.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/components/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/components/all.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/components/all.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/components/all.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/components/all.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/components/all.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/components/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/components/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ScrollTrigger.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/lib/ScrollTrigger.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/homePageAnimation.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/homePageAnimation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/categoriesPages/allCategoriesPage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/categoriesPages/allCategoriesPage.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/categoriesPages/baseCategory.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/categoriesPages/baseCategory.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/categoriesPages/car/entryLevelCarCategory.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/categoriesPages/car/entryLevelCarCategory.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/categoriesPages/car/seniorLevelCarCategory.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/categoriesPages/car/seniorLevelCarCategory.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,7 +168,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/js/lib" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -149,13 +184,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Develpment\Symfony\Hitko\public\js\lib" />
       <recent name="D:\Develpment\Symfony\Hitko\public\images" />
       <recent name="D:\Develpment\Symfony\Hitko\public\images\cars" />
       <recent name="D:\Develpment\Symfony\Hitko\public\images\cars\motorcycle" />
       <recent name="D:\Develpment\Symfony\Hitko\public\images\personal" />
-      <recent name="D:\Develpment\Symfony\Hitko" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Develpment\Symfony\Hitko\public\js\lib" />
       <recent name="D:\Develpment\Symfony\Hitko\public\images\vehicles\cars" />
       <recent name="D:\Develpment\Symfony\Hitko\public\images\vehicles" />
       <recent name="D:\Develpment\Symfony\Hitko\public" />
@@ -186,7 +222,12 @@
       <workItem from="1605345013714" duration="3354000" />
       <workItem from="1607317847632" duration="8841000" />
       <workItem from="1607590866689" duration="11881000" />
-      <workItem from="1607671084213" duration="1257000" />
+      <workItem from="1607671084213" duration="6984000" />
+      <workItem from="1607711351918" duration="2501000" />
+      <workItem from="1607723086863" duration="5485000" />
+      <workItem from="1607758152523" duration="4252000" />
+      <workItem from="1607777849150" duration="491000" />
+      <workItem from="1607778971572" duration="2023000" />
     </task>
     <servers />
   </component>

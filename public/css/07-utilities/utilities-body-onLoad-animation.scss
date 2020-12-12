@@ -1,0 +1,13 @@
+body{
+  animation: onLoadBodyAnimation 1s;
+}
+
+@keyframes onLoadBodyAnimation {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+
+}

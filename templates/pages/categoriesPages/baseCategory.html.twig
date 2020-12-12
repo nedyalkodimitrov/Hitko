@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{asset("css/components/footer.css")}}" rel="stylesheet">
     <link href="{{asset("css/components/navbarStyle.css")}}" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset("css/components/all.css") }}">
     <link rel="stylesheet" href="{{ asset("css/06-components/components-categories-card.css") }}">
@@ -16,8 +17,15 @@
     <link rel="stylesheet" href="{{ asset("css/06-components/components-category-price-card.css") }}">
     <link rel="stylesheet" href="{{ asset("css/06-components/components-required-documents.css") }}">
     <link rel="stylesheet" href="{{ asset("css/pages/categories/categories.css") }}">
-
+    <link rel="stylesheet" href="{{ asset("css/06-components/components-paralax-box.css") }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="{{ asset("js/homePageAnimation.js") }}" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
+
+    <script src="{{ asset("js/lib/TweenLite.min.js") }}" ></script>
+    <script src="{{ asset("js/lib/TweenMax.min.js") }}"></script>
     <script src="{{ asset("js/homePageAnimation.js") }}" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/58cf8ffc69.js" crossorigin="anonymous"></script>
@@ -27,72 +35,7 @@
 </head>
 <body>
 
-<div>
-    <div class="col-lg-12  col-12 m-0 justify-content-around row header-information" >
-        <a class="col-5 col-md-3 col-lg-3 justify-content-center row my-auto m-0 p-0" href="">
-            <i class="fas fa-phone-alt col-2 p-0"></i>
-            <h5 class="col-10 p-0 ml-0">089 876 9606</h5>
-        </a>
-        <a class="col-5 col-lg-4 col-md-4 row justify-content-center p-0 my-auto m-0" href="">
-            <i class="fa fa-clock-o col-2 p-0 my-auto" aria-hidden="true"></i>
-            <div class="col-10 my-auto p-0 m-0">
-                <h5 class="p-0 m-0 ml-1">Работно време</h5>
-                <h6 class="p-0 m-0 ml-1">от 09:00 - 18:00</h6>
-            </div>
-        </a>
-
-    </div>
-</div>
-
-
-<nav class="navbar large-navbar navbar-expand-lg  navbar-light bg-white py-3 shadow-sm homePage-start-nav" id="navbar">
-    <div class="container mx-auto col-12  p-0 row">
-
-        <a href="{{ path("home") }}" class="justify-content-center  demo-logo-text"><h4>Хитко</h4></a>
-        <button class="navbar-toggler" id="navbar-toggler-button" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
-            <div class="nav-toggle-button-container" onclick="changeToggleMenuButton(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-        </button>
-        <div id="navbarNavDropdown" class="collapse navbar-collapse " >
-            <ul class="nav navbar-nav menu"  id="menu">
-                <li><a href="{{ path("home") }}">Начало</a></li>
-                <li class="dropdown">
-                    <a data-toggle="dropdown">Курсове за шофюри </a>
-                    <ul class="dropdown-menu" role="menu" id="firs-dropdown">
-
-                        <li><a href="{{ path("allCategories") }}" >Всички категории</a></li>
-                        <li><a href="#" >Категория A1</a></li>
-                        <li><a href="#" >Категория A2</a></li>
-                        <li><a href="{{ path('motorcycle-seniorLevel') }}" >Категория A</a></li>
-                        <li><a href="{{ path('car-entryLevel') }}" >Категория B1</a></li>
-                        <li><a href="{{ path('car-seniorLevel') }}" >Категория B</a></li>
-                        <li><a href="#" >Категория C1</a></li>
-                        <li><a href="#" >Категория C</a></li>
-                        <li><a href="#" >Категория C + E</a></li>
-                        <li><a href="#" >Категория B + E</a></li>
-
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a data-toggle="dropdown" href="#">Курсове за правосподобност </a>
-                    <ul class="dropdown-menu" role="menu" id="firs-dropdown">
-
-                        <li><a href="#" >Мотокар</a></li>
-                        <li><a href="#" >Багер</a></li>
-
-
-                    </ul>
-                </li>
-
-                <li><a href="{{ path("contactUsPage") }}">Контакти</a></li>
-
-            </ul>
-        </div>
-    </div>
-</nav>
+{% include 'components/menu.html.twig' %}
 <div class="container row col-12 m-0 p-0">
     <div class="col-12 m-0 p-0">
         {% block navBarContent %}
@@ -147,7 +90,7 @@
 
 
 
-<div class="c-category-information-card c-category-information-card--blue-color">
+<div class="slideRight-el-1 c-category-information-card c-category-information-card--blue-color u-slideRight" >
     <div class="c-category-information-card__image-container">
         <img src="{{ asset("images/schoolRoom.jpg") }}" alt="" class="c-category-information-card__image">
     </div>
@@ -158,7 +101,7 @@
     </div>
 </div>
 
-<div data-av-animation="slideInRight" class="aniview slow c-category-information-card c-category-information-card--text-right c-category-information-card--green-color">
+<div class="slideLeft-el-1 c-category-information-card c-category-information-card--text-right c-category-information-card--green-color u-slideLeft " >
     <div class="c-category-information-card__image-container">
         <img src="{{ asset("images/road.jpg") }}" alt="" class="c-category-information-card__image">
     </div>
@@ -169,7 +112,7 @@
     </div>
 </div>
 
-<div class="c-required-documents">
+<div class="c-required-documents u-slideRight slideRight-el-2">
     <div class="c-required-documents__title">
         <h2>Необходими документи</h2>
         <hr>
@@ -184,7 +127,7 @@
 </div>
 
 
-<div class="c-category-price-card  aniview  " data-av-animation="fadeIn">
+<div class="c-category-price-card  slideLeft-el-2  u-slideLeft" id="s" data-av-animation="fadeIn">
     <div class="c-category-price-card__text">
         <h2>Цени <i class="fas fa-coins">  </i></h2>
     </div>
@@ -226,104 +169,58 @@
     </div>
 </div>
 
-<div class="aniview" data-av-animation="slideInRight"></div>
+<div class="c-paralax-box c-paralax-box--contactUs mt-4">
+
+    <div class="c-paralax-box__content">
+        <h2 class="mb-4">Запишете се при нас  </h2>
+        <a href="{{ path("contactUsPage") }}"><button class="c-button c-button--red"><i class="fas fa-phone mr-2"></i>Свържете се с нас </button></a>
+    </div>
+
+</div>
 
 <script>
-    var options = {
-        animateThreshold: 100,
-        scrollPollInterval: 300
+    gsap.registerPlugin(ScrollTrigger);
+
+    var slideLeftEl = document.getElementsByClassName("u-slideLeft");
+    var slideRightEl = document.getElementsByClassName("u-slideRight");
+
+    for (var i = 1; i <= slideLeftEl.length ; i++){
+        gsap.to(".slideLeft-el-"+i, {
+            scrollTrigger: {
+                trigger: ".slideLeft-el-"+i,
+                // scrub: true,
+                toggleActions: "play pause resume reset"
+            },
+
+            x:0 ,
+            duration: 1.5,
+            ease: "power2.out"
+
+        });
     }
-    $('.aniview').AniView();
+
+   for (var i = 1; i <= slideRightEl.length; i++){
+        gsap.to(".slideRight-el-"+i, {
+            scrollTrigger: {
+                trigger: ".slideRight-el-"+i,
+                // scrub: true,
+                toggleActions: "play pause resume reset"
+            },
+
+            x:0 ,
+            duration: 1.5,
+            ease: "power2.out"
+
+        });
+    }
+
+
+
 
 </script>
 
 {% block javascripts %}{% endblock %}
-
-<footer class="footer-section">
-    <div class="container col-12">
-        <div class="footer-cta pt-5 pb-5">
-        </div>
-        <div class="footer-content pt-5 pb-5">
-            <div class="row">
-                <div class="col-xl-4 col-lg-4 mb-50">
-                    <div class="footer-widget">
-                        <div class="footer-logo">
-                            <h2>Хитко</h2>
-                        </div>
-                        <div class="footer-text">
-                            <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                                elit,Lorem ipsum dolor sit amet.</p>
-                        </div>
-                        <div class="footer-social-icon">
-                            <span>Follow us</span>
-                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                    <div class="footer-widget">
-                        <div class="footer-widget-heading">
-                            <h3>Useful Links</h3>
-                        </div>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">about</a></li>
-                            <li><a href="#">services</a></li>
-                            <li><a href="#">portfolio</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Our Services</a></li>
-                            <li><a href="#">Expert Team</a></li>
-                            <li><a href="#">Contact us</a></li>
-                            <li><a href="#">Latest News</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                    <div class="footer-widget">
-                        <div class="footer-widget-heading">
-                            <h3>Subscribe</h3>
-                        </div>
-                        <div class="footer-text mb-25">
-                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                        </div>
-                        <div class="subscribe-form">
-                            <form action="#">
-                                <input type="text" placeholder="Email Address">
-                                <button><i class="fab fa-telegram-plane"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="copyright-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                    <div class="copyright-text">
-                        <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                    <div class="footer-menu">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Terms</a></li>
-                            <li><a href="#">Privacy</a></li>
-                            <li><a href="#">Policy</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-
+{% include 'components/footer.html.twig' %}
 <script>
     window.onscroll = function() {myFunction()};
 

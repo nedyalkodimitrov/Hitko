@@ -50,11 +50,11 @@ ul {
 .footer-text p {
     margin-bottom: 14px;
     font-size: 14px;
-    color: #7e7e7e;
+    color: black;
     line-height: 28px;
 }
 .footer-social-icon span {
-    color: #fff;
+    color: black;
     display: block;
     font-size: 20px;
     font-weight: 700;
@@ -75,7 +75,14 @@ ul {
 }
 .facebook-bg{
     background: #3B5998;
+    transition: 0.2s ease;
 }
+.facebook-bg:hover{
+    background: black;
+    color: white;
+}
+
+
 .twitter-bg{
     background: #55ACEE;
 }

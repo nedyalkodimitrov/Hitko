@@ -45,6 +45,7 @@ Remove the margin in all browsers.
 */
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 /**
@@ -752,6 +753,36 @@ body {
 .c-button:hover {
   color: white;
   background: black;
+}
+.c-button--red {
+  border-radius: 10px;
+  padding: 0.7em;
+  border: 2px solid darkred;
+  transition: 0.3s background-color ease-out, 0.3s color ease-out;
+}
+.c-button--red:hover {
+  color: white;
+  background: darkred;
+}
+
+body {
+  animation: onLoadBodyAnimation 1s;
+}
+
+@keyframes onLoadBodyAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.u-slideLeft {
+  transform: translateX(100%);
+}
+
+.u-slideRight {
+  transform: translateX(-100%);
 }
 
 /*# sourceMappingURL=all.css.map */

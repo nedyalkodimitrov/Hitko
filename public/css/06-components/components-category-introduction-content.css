@@ -6,6 +6,7 @@
   width: 100%;
   padding: 1em;
   margin-bottom: 2em;
+  animation: onLoadIntroductionAction 1.5s;
 }
 .c-introduction-content__text-container {
   text-align: center;

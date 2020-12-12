@@ -1,6 +1,7 @@
 @import "../02-tools/tools-breakpoints";
 
 .c-categories-card{
+  padding: 1em;
   padding-top: 0.5em;
   display: grid;
   width: 100%;
@@ -19,6 +20,7 @@
 
   width: 100%;
    img{
+     border-radius: 10px;
      width: 100%;
    }
 

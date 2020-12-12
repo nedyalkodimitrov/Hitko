@@ -1,4 +1,5 @@
 .c-categories-card {
+  padding: 1em;
   padding-top: 0.5em;
   display: grid;
   width: 100%;
@@ -16,6 +17,7 @@
   width: 100%;
 }
 .c-categories-card__image img {
+  border-radius: 10px;
   width: 100%;
 }
 @media (max-width: 599px) {

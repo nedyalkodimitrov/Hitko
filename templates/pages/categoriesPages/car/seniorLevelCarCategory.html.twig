@@ -1,50 +1,137 @@
-{% extends 'base.html.twig' %}
-{% block title %}Хитко Разград | Категория A1{% endblock %}
-{% block stylesheets %}
-    <link rel="stylesheet" href="{{ asset("css/06-components/components-categories-card.css") }}">
-    <link rel="stylesheet" href="{{ asset("css/06-components/components-paralax-box.css") }}">
-    <link rel="stylesheet" href="{{ asset("css/06-components/components-category-header.css") }}">
-    <link rel="stylesheet" href="{{ asset("css/06-components/components-category-introduction-content.css") }}">
-    <link rel="stylesheet" href="{{ asset("css/pages/categories/categories.css") }}">
-{% endblock %}
+{#{% extends 'base.html.twig' %}#}
+{#{% block title %}Хитко Разград | Категория A1{% endblock %}#}
+{#{% block stylesheets %}#}
+{#    <link rel="stylesheet" href="{{ asset("css/06-components/components-categories-card.css") }}">#}
+{#    <link rel="stylesheet" href="{{ asset("css/06-components/components-paralax-box.css") }}">#}
+{#    <link rel="stylesheet" href="{{ asset("css/06-components/components-category-header.css") }}">#}
+{#    <link rel="stylesheet" href="{{ asset("css/06-components/components-category-introduction-content.css") }}">#}
+{#    <link rel="stylesheet" href="{{ asset("css/pages/categories/categories.css") }}">#}
+{#{% endblock %}#}
+
+{#{% block body %}#}
+{#    <div class="c-categories-header">#}
+{#        <div class="c-categories-header__category-name ">#}
+{#            <h3>Шофьорски курсове</h3>#}
+{#            <hr>#}
+{#            <h1>Категория B</h1>#}
+{#            <hr>#}
+{#        </div>#}
+{#        <div class="c-categories-header__image-container ">#}
+{#            <img src="{{ asset("images/vehicles/cars/car.jpg") }}" alt="" class="c-categories-header__image">#}
+{#        </div>#}
+{#    </div>#}
+
+
+{#    <div class="c-introduction-content o-grid-container o-grid-container--cg-2">#}
+
+{#        <div class="c-introduction-content__text-container o-grid-element--start-1 o-grid-element--end-7 ">#}
+{#            <div class="c-introduction-content__text">#}
+{#                <h5>#}
+{#                    Свидетелството за управление на МПС за категория “В” позволява управление на леки, лекотоварни и товарни автомобили с ръчна или с автоматична предавателна кутия и с допустима максимална маса включително и товара до 3,5 тона и до 9 места.#}
+
+{#                    Курсът включва теоретична и практическа подготовка. Управлението на автомобила се провежда на полигон, в населено и извън населено място.#}
+
+{#                    За да започнете курса за категория „В“ се изискват навършени 17 години и 9 месеца.#}
+{#                </h5>#}
+
+{#            </div>#}
+{#        </div>#}
+{#        <div class="c-introduction-content__requirements-container text-center o-grid-element--start-8 o-grid-element--end-12 ">#}
+{#            <h4>Изисквания</h4>#}
+{#            <div class="text-left c-introduction-content__requirements">#}
+{#                <h5><i class="fas fa-check"></i>Навършени 17 години и 9 месеца</h5>#}
+{#                <h5><i class="fas fa-check"></i>Диплома за завършено образование /мин. основно/</h5>#}
+{#                <h5><i class="fas fa-check"></i>Снимка паспортен формат</h5>#}
+{#            </div>#}
+
+{#        </div>#}
+
+{#    </div>#}
+{#{% endblock %}#}
+
+
+{% extends 'pages/categoriesPages/baseCategory.html.twig' %}
+{% block title %}Хитко Разград | Категория “В”{% endblock %}
+
 
 {% block body %}
-    <div class="c-categories-header">
-        <div class="c-categories-header__category-name ">
-            <h3>Шофьорски курсове</h3>
-            <hr>
-            <h1>Категория B</h1>
-            <hr>
+    {% block categoryName %} <h1>   Категория “В”</h1>{% endblock %}
+    {% block headerImage %}
+        <img src="{{ asset("images/vehicles/cars/car.jpg") }}" alt="" class="c-categories-header__image">
+    {% endblock %}
+
+    {% block categoryIntroName %}Категория B{% endblock %}
+    {% block categoryIntroText%} Курс за категория “В” започва в понеделник на всяка четна седмица от годишния календар. Курсът включва 40 учебни часа теория, разпределени в рамките на две седмици и 31 учебни часа кормуване. Продължителността на учебния час при практическо обучение е 50 мин.
+        Графикът се прави с инструктора в зависимост от вашите възможности и желания.
+    {% endblock %}
+
+    {% block requirements %}
+        <h5><i class="fas fa-check"></i>За да започнете курса за категория „В“ се изискват навършени 17 години и 9 месеца.</h5>
+
+    {% endblock %}
+
+    {% block necessaryDocuments %}
+        <div class="c-required-documents__document"><h4><i class="fa fa-id-card-o" aria-hidden="true"></i>Лична карта</h4></div>
+        <div class="c-required-documents__document"><h4><i class="fa fa-camera" aria-hidden="true"></i>Две паспортни снимк</h4></div>
+        <div class="c-required-documents__document"><h4><i class="fa fa-id-card-o" aria-hidden="true"></i>Диплома за завършено основно, средно или висше образование;</h4></div>
+
+    {% endblock %}
+
+
+    {% block informationCardFirstText %}
+        Обучението по теория се извършва чрез мултимедия и включва 19 теми, които се преподават за 40 часа, разпределени в рамките на две или четири седмици, в зависимост от вида на курса/ускорен или нормален/ и 31 часа кормуване.
+
+        В 36 часа ще изучавате ЗДвП и Правилника за неговото приложение, а през останалите 4 часа ще имате възможност да се запознаете с устройството на автомобил
+    {% endblock %}
+    {% block informationCardSecondText %}
+        1. Придобиване на навици за работа с уредите за управление на автомобила;
+        <br>
+        2. Обучение на учебна площадка (полигон) за потегляне, спиране, маневри и паркиране.
+        <br>
+        3. Научаване и изпълнение на правилата за движение по пътищата;
+        <br>
+        4. Реални навици на управление на автомобил при определени условия:
+        <br>
+        – при интензивно градско движение,
+        <br>
+        – извънградски условия,
+        <br>
+        – полигон и автомагистрала.
+    {% endblock %}
+
+
+
+    {% block prices %}
+        <div class="c-category-price-card__list-element o-grid-element--start-1 o-grid-element--medium--end-2 o-grid-element--small--end-6 o-grid-element--smartphone--start-1 o-grid-element--smartphone--end-6">
+            <h4 class="c-category-price-card__list-element__price">390лв</h4>
+            <h5 class="c-category-price-card__list-element__text">Цена на курса</h5>
         </div>
-        <div class="c-categories-header__image-container ">
-            <img src="{{ asset("images/vehicles/cars/car.jpg") }}" alt="" class="c-categories-header__image">
+        <div class="c-category-price-card__list-element o-grid-element--medium--start-3 o-grid-element--medium--end-4   o-grid-element--small--start-7 o-grid-element--small--end-12 o-grid-element--smartphone--start-7 o-grid-element--smartphone--end-12 ">
+            <h4 class="c-category-price-card__list-element__price">60лв</h4>
+            <h5 class="c-category-price-card__list-element__text">Административна такса</h5>
         </div>
-    </div>
-
-
-    <div class="c-introduction-content o-grid-container o-grid-container--cg-2">
-
-        <div class="c-introduction-content__text-container o-grid-element--start-1 o-grid-element--end-7 ">
-            <div class="c-introduction-content__text">
-                <h5>
-                    Свидетелството за управление на МПС за категория “В” позволява управление на леки, лекотоварни и товарни автомобили с ръчна или с автоматична предавателна кутия и с допустима максимална маса включително и товара до 3,5 тона и до 9 места.
-
-                    Курсът включва теоретична и практическа подготовка. Управлението на автомобила се провежда на полигон, в населено и извън населено място.
-
-                    За да започнете курса за категория „В“ се изискват навършени 17 години и 9 месеца.
-                </h5>
-
-            </div>
-        </div>
-        <div class="c-introduction-content__requirements-container text-center o-grid-element--start-8 o-grid-element--end-12 ">
-            <h4>Изисквания</h4>
-            <div class="text-left c-introduction-content__requirements">
-                <h5><i class="fas fa-check"></i>Навършени 17 години и 9 месеца</h5>
-                <h5><i class="fas fa-check"></i>Диплома за завършено образование /мин. основно/</h5>
-                <h5><i class="fas fa-check"></i>Снимка паспортен формат</h5>
-            </div>
+        <div class="c-category-price-card__list-element o-grid-element--medium--start-5 o-grid-element--medium--end-6 o-grid-element--small--start-1 o-grid-element--small--end-6 o-grid-element--smartphone--start-1 o-grid-element--smartphone--end-6">
+            <h4 class="c-category-price-card__list-element__price">60лв</h4>
+            <h5 class="c-category-price-card__list-element__text">Вътрешен изпит по практика</h5>
 
         </div>
+        <div class="c-category-price-card__list-element o-grid-element--medium--start-7 o-grid-element--medium--end-8    o-grid-element--small--start-7 o-grid-element--small--end-12 o-grid-element--smartphone--start-7 o-grid-element--smartphone--end-12 ">
+            <h4 class="c-category-price-card__list-element__price">60лв</h4>
+            <h5 class="c-category-price-card__list-element__text">Външен изпит по практика пред ИА“АА“</h5>
+        </div>
+        <div class="c-category-price-card__list-element o-grid-element--medium--start-9 o-grid-element--medium--end-10  o-grid-element--small--start-1 o-grid-element--small--end-6 o-grid-element--smartphone--start-1 o-grid-element--smartphone--end-6">
+            <h4 class="c-category-price-card__list-element__price">60лв</h4>
+            <h5 class="c-category-price-card__list-element__text">Външен теоретичен изпит пред ИА“АА“ /когато нямате категория „В“/</h5>
 
-    </div>
+        </div>
+        <div class="c-category-price-card__list-element o-grid-element--medium--start-11 o-grid-element--medium--end-12    o-grid-element--small--start-7 o-grid-element--small--end-12 o-grid-element--smartphone--start-7 o-grid-element--smartphone--end-12 ">
+            <h4 class="c-category-price-card__list-element__price">60лв</h4>
+            <h5 class="c-category-price-card__list-element__text">Вътрешен теоретичен изпит /когато нямате категория „В“/</h5>
+
+        </div>
+    {% endblock %}
+
+
+
+
 {% endblock %}

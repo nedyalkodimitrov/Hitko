@@ -1,0 +1,66 @@
+<div>
+    <div class="col-lg-12  col-12 m-0 justify-content-around row header-information" >
+        <a class="col-5 col-md-3 col-lg-3 justify-content-center row my-auto m-0 p-0" href="">
+            <i class="fas fa-phone-alt col-2 p-0"></i>
+            <h5 class="col-10 p-0 ml-0">089 876 9606</h5>
+        </a>
+        <a class="col-5 col-lg-4 col-md-4 row justify-content-center p-0 my-auto m-0" href="">
+            <i class="fa fa-clock-o col-2 p-0 my-auto" aria-hidden="true"></i>
+            <div class="col-10 my-auto p-0 m-0">
+                <h5 class="p-0 m-0 ml-1">Работно време</h5>
+                <h6 class="p-0 m-0 ml-1">от 09:00 - 18:00</h6>
+            </div>
+        </a>
+
+    </div>
+</div>
+
+
+<nav class="navbar large-navbar navbar-expand-lg  navbar-light bg-white py-3 shadow-sm homePage-start-nav" id="navbar">
+    <div class="container mx-auto col-12  p-0 row">
+
+        <a href="{{ path("home") }}" class="justify-content-center  demo-logo-text"><h4>Хитко</h4></a>
+        <button class="navbar-toggler" id="navbar-toggler-button" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
+            <div class="nav-toggle-button-container" onclick="changeToggleMenuButton(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </button>
+        <div id="navbarNavDropdown" class="collapse navbar-collapse " >
+            <ul class="nav navbar-nav menu"  id="menu">
+                <li><a href="{{ path("home") }}">Начало</a></li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown">Курсове за шофюри </a>
+                    <ul class="dropdown-menu" role="menu" id="firs-dropdown">
+
+                        <li><a href="{{ path("allCategories") }}" >Всички категории</a></li>
+                        <li><a href="{{ path("motorcycle-entryLevel") }}" >Категория A1</a></li>
+                        <li><a href="{{ path("motorcycle-mediumLevel") }}" >Категория A2</a></li>
+                        <li><a href="{{ path('motorcycle-seniorLevel') }}" >Категория A</a></li>
+                        <li><a href="{{ path('car-entryLevel') }}" >Категория B1</a></li>
+                        <li><a href="{{ path('car-seniorLevel') }}" >Категория B</a></li>
+                        <li><a href="#" >Категория C1</a></li>
+                        <li><a href="#" >Категория C</a></li>
+                        <li><a href="#" >Категория C + E</a></li>
+                        <li><a href="#" >Категория B + E</a></li>
+
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" href="#">Курсове за правосподобност </a>
+                    <ul class="dropdown-menu" role="menu" id="firs-dropdown">
+
+                        <li><a href="#" >Мотокар</a></li>
+                        <li><a href="#" >Багер</a></li>
+
+
+                    </ul>
+                </li>
+
+                <li><a href="{{ path("contactUsPage") }}">Контакти</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
